@@ -14,18 +14,42 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.views.static import serve
+from rest_framework.documentation import include_docs_urls
 
 import xadmin
 from django.contrib import admin
 from django.urls import path, re_path, include
 
 from VueDjangoFrameWorkShop.settings import MEDIA_ROOT
+from goods.views import GoodsListViewSet
+# from goods.views import GoodsListView,
+# from goods.views_base import GoodsListView
+from rest_framework.routers import DefaultRouter
+
+# goods_list = GoodsListViewSet.as_view({
+#     'get': 'list',
+# })
+router = DefaultRouter()
+
+# 配置goods的url
+router.register(r'goods', GoodsListViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),
     # 处理图片显示的url,使用Django自带serve,传入参数告诉它去哪个路径找，我们有配置好的路径MEDIAROOT
     re_path('media/(?P<path>.*)', serve, {"document_root": MEDIA_ROOT }),
     # 富文本相关url
     path('ueditor/', include('DjangoUeditor.urls')),
+
+    # 商品列表页
+    # path('goods/', GoodsListView.as_view(),name="goods-list"),
+    # path('goods/', goods_list,name="goods-list"),
+
+    # router的path路径
+    re_path('^', include(router.urls)),
+    # 自动化文档,1.11版本中注意此处前往不要加$符号
+    path('docs/', include_docs_urls(title='mtianyan生鲜超市文档')),
+    # 调试登录
+    path('api-auth/', include('rest_framework.urls'))
 ]

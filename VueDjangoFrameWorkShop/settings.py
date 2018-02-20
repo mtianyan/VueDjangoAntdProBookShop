@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'xadmin',
     'crispy_forms',
     'DjangoUeditor',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +141,8 @@ STATIC_URL = '/static/'
 # 设置上传文件，图片访问路径
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# 所有与drf相关的设置写在这里面
+REST_FRAMEWORK = {
+
+}
