@@ -1,6 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
+from rest_framework.authentication import TokenAuthentication
+
 from rest_framework import status
 from rest_framework.generics import ListAPIView
 from rest_framework.pagination import PageNumberPagination
@@ -46,6 +48,9 @@ class GoodsListViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     serializer_class = GoodsSerializer
     pagination_class = GoodsPagination
     queryset = Goods.objects.all()
+
+    # 设置列表页的单独auth认证也就是不认证
+    # authentication_classes = (TokenAuthentication,)
 
     # 设置三大常用过滤器之DjangoFilterBackend, SearchFilter
     filter_backends = (DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)

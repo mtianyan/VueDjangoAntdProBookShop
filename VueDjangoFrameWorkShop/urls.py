@@ -25,6 +25,8 @@ from goods.views import GoodsListViewSet, CategoryViewset
 # from goods.views import GoodsListView,
 # from goods.views_base import GoodsListView
 from rest_framework.routers import DefaultRouter
+from rest_framework.authtoken import views
+from rest_framework_jwt.views import obtain_jwt_token
 
 # goods_list = GoodsListViewSet.as_view({
 #     'get': 'list',
@@ -52,7 +54,13 @@ urlpatterns = [
     # router的path路径
     re_path('^', include(router.urls)),
     # 自动化文档,1.11版本中注意此处前往不要加$符号
-    path('docs/', include_docs_urls(title='mtianyan生鲜超市文档')),
+    path('docs/', include_docs_urls(title='mtianyan超市文档')),
     # 调试登录
-    path('api-auth/', include('rest_framework.urls'))
+    path('api-auth/', include('rest_framework.urls')),
+
+    # drf自带的token授权登录,获取token需要向该地址post数据
+    path('api-token-auth/', views.obtain_auth_token),
+
+    # jwt的token认证
+    path('login/', obtain_jwt_token )
 ]

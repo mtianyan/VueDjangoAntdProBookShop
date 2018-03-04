@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
-
+import datetime
 import os
 import sys
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -28,6 +28,12 @@ SECRET_KEY = 'y5yew=o5yey*9ydgt74-st11qkt$3n_i9r-c+aw$lt0%x3%a^)'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+# 设置邮箱和用户名和手机号均可登录
+AUTHENTICATION_BACKENDS = (
+    'users.views.CustomBackend',
+
+)
 
 # 此处重载是为了使我们的UserProfile生效
 AUTH_USER_MODEL = "users.UserProfile"
@@ -51,6 +57,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'corsheaders',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -152,5 +159,15 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # 所有与drf相关的设置写在这里面
 REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    )
+}
 
+# 与drf的jwt相关的设置
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=20),
+    'JWT_AUTH_HEADER_PREFIX': 'Bearer',
 }
