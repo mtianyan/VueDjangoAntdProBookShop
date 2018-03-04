@@ -21,7 +21,7 @@ from django.contrib import admin
 from django.urls import path, re_path, include
 
 from VueDjangoFrameWorkShop.settings import MEDIA_ROOT
-from goods.views import GoodsListViewSet
+from goods.views import GoodsListViewSet, CategoryViewset
 # from goods.views import GoodsListView,
 # from goods.views_base import GoodsListView
 from rest_framework.routers import DefaultRouter
@@ -31,8 +31,11 @@ from rest_framework.routers import DefaultRouter
 # })
 router = DefaultRouter()
 
-# 配置goods的url
-router.register(r'goods', GoodsListViewSet)
+# 配置goods的url,这个basename是干啥的
+router.register(r'goods', GoodsListViewSet, base_name="goods")
+
+# 配置Category的url
+router.register(r'categories', CategoryViewset, base_name="categories")
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
