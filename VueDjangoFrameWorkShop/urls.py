@@ -22,6 +22,7 @@ from django.urls import path, re_path, include
 
 from VueDjangoFrameWorkShop.settings import MEDIA_ROOT
 from goods.views import GoodsListViewSet, CategoryViewset
+from users.views import SmsCodeViewset
 # from goods.views import GoodsListView,
 # from goods.views_base import GoodsListView
 from rest_framework.routers import DefaultRouter
@@ -38,6 +39,9 @@ router.register(r'goods', GoodsListViewSet, base_name="goods")
 
 # 配置Category的url
 router.register(r'categories', CategoryViewset, base_name="categories")
+
+# 配置codes的url
+router.register(r'codes', SmsCodeViewset, base_name="codes")
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
