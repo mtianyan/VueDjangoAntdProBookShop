@@ -25,7 +25,6 @@ def get_view_name(view_cls, suffix=None):
     """
     Given a view class, return a textual name to represent the view.
     This name is used in the browsable API, and in OPTIONS responses.
-
     This function is the default for the `VIEW_NAME_FUNCTION` setting.
     """
     name = view_cls.__name__
@@ -42,7 +41,6 @@ def get_view_description(view_cls, html=False):
     """
     Given a view class, return a textual description to represent the view.
     This name is used in the browsable API, and in OPTIONS responses.
-
     This function is the default for the `VIEW_DESCRIPTION_FUNCTION` setting.
     """
     description = view_cls.__doc__ or ''
@@ -61,10 +59,8 @@ def set_rollback():
 def exception_handler(exc, context):
     """
     Returns the response that should be used for any given exception.
-
     By default we handle the REST framework `APIException`, and also
     Django's built-in `Http404` and `PermissionDenied` exceptions.
-
     Any unhandled exceptions may return `None`, which will cause a 500 error
     to be raised.
     """
@@ -112,7 +108,6 @@ class APIView(View):
     def as_view(cls, **initkwargs):
         """
         Store the original class on the view function.
-
         This allows us to discover information about the view when we do URL
         reverse lookups.  Used for breadcrumb generation.
         """
@@ -306,7 +301,6 @@ class APIView(View):
     def perform_authentication(self, request):
         """
         Perform authentication on the incoming request.
-
         Note that if you override this and simply 'pass', then authentication
         will instead be performed lazily, the first time either
         `request.user` or `request.auth` is accessed.

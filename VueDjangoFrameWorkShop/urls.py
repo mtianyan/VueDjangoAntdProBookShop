@@ -41,7 +41,7 @@ router.register(r'goods', GoodsListViewSet, base_name="goods")
 router.register(r'categories', CategoryViewset, base_name="categories")
 
 # 配置codes的url
-router.register(r'codes', SmsCodeViewset, base_name="codes")
+router.register(r'code', SmsCodeViewset, base_name="code")
 
 # 配置users的url
 router.register(r'users', UserViewset, base_name="users")
