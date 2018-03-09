@@ -85,7 +85,7 @@ class UserViewset(CreateModelMixin, viewsets.GenericViewSet):
     用户
     """
     serializer_class = UserRegSerializer
-    # queryset = User.objects.all()
+    queryset = User.objects.all()
     # authentication_classes = (JSONWebTokenAuthentication, authentication.SessionAuthentication )
     #
     # def get_serializer_class(self):

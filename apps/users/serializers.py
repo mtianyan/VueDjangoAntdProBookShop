@@ -53,6 +53,8 @@ class UserRegSerializer(serializers.ModelSerializer):
         style={'input_type': 'password'}, help_text="密码", label="密码", write_only=True,
     )
 
+    # 调用父类的create方法，该方法会返回当前model的实例化对象即user。
+    # 前面是将父类原有的create进行执行，后面是加入自己的逻辑
     # def create(self, validated_data):
     #     user = super(UserRegSerializer, self).create(validated_data=validated_data)
     #     user.set_password(validated_data["password"])
