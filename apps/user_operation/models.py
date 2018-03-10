@@ -3,6 +3,7 @@ from django.db import models
 from goods.models import Goods
 from django.contrib.auth import get_user_model
 # Create your models here.
+
 User = get_user_model()
 
 
@@ -18,7 +19,7 @@ class UserFav(models.Model):
         verbose_name = '用户收藏'
         verbose_name_plural = verbose_name
 
-        #
+        # 多个字段作为一个联合唯一索引
         unique_together = ("user", "goods")
 
     def __str__(self):
