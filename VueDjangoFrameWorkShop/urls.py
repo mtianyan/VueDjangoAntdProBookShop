@@ -22,7 +22,7 @@ from django.urls import path, re_path, include
 
 from VueDjangoFrameWorkShop.settings import MEDIA_ROOT
 from goods.views import GoodsListViewSet, CategoryViewset
-from user_operation.views import UserFavViewset
+from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
 from users.views import SmsCodeViewset, UserViewset
 # from goods.views import GoodsListView,
 # from goods.views_base import GoodsListView
@@ -49,6 +49,13 @@ router.register(r'users', UserViewset, base_name="users")
 
 # 配置用户收藏的url
 router.register(r'userfavs', UserFavViewset, base_name="userfavs")
+
+# 配置用户留言的url
+router.register(r'messages', LeavingMessageViewset, base_name="messages")
+
+# 收货地址
+router.register(r'address', AddressViewset, base_name="address")
+
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),
