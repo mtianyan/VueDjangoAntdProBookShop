@@ -22,7 +22,7 @@ from django.urls import path, re_path, include
 
 from VueDjangoFrameWorkShop.settings import MEDIA_ROOT
 from goods.views import GoodsListViewSet, CategoryViewset
-from trade.views import ShoppingCartViewset
+from trade.views import ShoppingCartViewset, OrderViewset
 from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
 from users.views import SmsCodeViewset, UserViewset
 # from goods.views import GoodsListView,
@@ -57,8 +57,11 @@ router.register(r'messages', LeavingMessageViewset, base_name="messages")
 # 收货地址
 router.register(r'address', AddressViewset, base_name="address")
 
-# 收货地址
+# 购物车
 router.register(r'shopcarts', ShoppingCartViewset, base_name="shopcarts")
+
+# 订单相关url
+router.register(r'orders', OrderViewset, base_name="orders")
 
 urlpatterns = [
     # path('admin/', admin.site.urls),

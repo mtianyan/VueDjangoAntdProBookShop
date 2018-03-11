@@ -41,7 +41,7 @@ class OrderInfo(models.Model):
         ("paying", "待支付"),
     )
     PAY_TYPE = (
-        ("alipay", "成功"),
+        ("alipay", "支付宝"),
         ("wechat", "微信"),
     )
 

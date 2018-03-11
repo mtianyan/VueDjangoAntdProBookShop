@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe981b6f-86fe-436c-a1a4-53d5f0fd0c95" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/trade/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/trade/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trade/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/trade/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trade/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/trade/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trade/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/trade/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="230">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -37,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/trade/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+            <state relative-caret-position="-127">
+              <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -52,8 +53,8 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extra_apps/rest_framework/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2071">
-              <caret line="943" selection-start-line="943" selection-end-line="959" selection-end-column="23" />
+            <state relative-caret-position="133">
+              <caret line="841" column="24" selection-start-line="841" selection-start-column="24" selection-end-line="841" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -61,10 +62,10 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/trade/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="25">
+              <caret line="112" column="18" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
               <folding>
-                <element signature="e#18#48#0" expanded="true" />
+                <element signature="e#18#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/apps/users/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+              <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -82,8 +83,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="59" selection-start-line="59" selection-end-line="60" selection-end-column="73" />
+            <state relative-caret-position="95">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
             </state>
           </provider>
         </entry>
@@ -100,7 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>BaseRenderer</find>
       <find>elements</find>
       <find>getele</find>
       <find>HTMLFormRenderer</find>
@@ -112,10 +112,10 @@
       <find>filter_form</find>
       <find>optional</find>
       <find>options</find>
-      <find>Field filters</find>
+      <find />
       <find>base</find>
       <find>get_rendered_html_form</find>
-      <find>invalid name</find>
+      <find />
       <find>TOken</find>
       <find>auth</find>
       <find>keyword</find>
@@ -129,6 +129,7 @@
       <find>dist</find>
       <find>area</find>
       <find>_data</find>
+      <find>order_sn</find>
       <find>update</find>
     </findStrings>
     <dirStrings>
@@ -146,7 +147,6 @@
         <option value="$PROJECT_DIR$/apps/trade/adminx.py" />
         <option value="$PROJECT_DIR$/apps/goods/models.py" />
         <option value="$PROJECT_DIR$/apps/users/adminx.py" />
-        <option value="$PROJECT_DIR$/apps/trade/models.py" />
         <option value="$PROJECT_DIR$/apps/trade/apps.py" />
         <option value="$PROJECT_DIR$/apps/goods/apps.py" />
         <option value="$PROJECT_DIR$/apps/user_operation/apps.py" />
@@ -184,6 +184,7 @@
         <option value="$PROJECT_DIR$/apps/user_operation/adminx.py" />
         <option value="$PROJECT_DIR$/apps/user_operation/serializers.py" />
         <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" />
+        <option value="$PROJECT_DIR$/apps/trade/models.py" />
         <option value="$PROJECT_DIR$/apps/trade/serializers.py" />
         <option value="$PROJECT_DIR$/apps/trade/views.py" />
       </list>
@@ -195,10 +196,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="793" />
+    <option name="width" value="814" />
+    <option name="height" value="867" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -248,7 +249,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../movie_project" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -451,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520755092603</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="完成购物车接口以及与vue的联调。">
+      <created>1520760705204</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1520760705204</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -467,15 +475,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32893" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50877196" side_tool="true" weight="0.432" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49122807" weight="0.32893" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32893" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49498746" visible="true" weight="0.4576" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49498746" visible="true" weight="0.4511041" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4924812" weight="0.32364598" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49224806" visible="true" weight="0.3113069" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49224806" weight="0.3113069" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298153" />
@@ -532,7 +541,8 @@
     <MESSAGE value="第八章完结，完成了商品详情页功能，实现了热卖商品接口，用户收藏接口，drf权限验证。" />
     <MESSAGE value="文档的使用" />
     <MESSAGE value="动态设置Serializer和permission。用户个人信息，收藏留言，收货地址。" />
-    <option name="LAST_COMMIT_MESSAGE" value="动态设置Serializer和permission。用户个人信息，收藏留言，收货地址。" />
+    <MESSAGE value="完成购物车接口以及与vue的联调。" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成购物车接口以及与vue的联调。" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -869,53 +879,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/trade/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="59" selection-start-line="59" selection-end-line="60" selection-end-column="73" />
+        <state relative-caret-position="95">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/users/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/rest_framework/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2071">
-          <caret line="943" selection-start-line="943" selection-end-line="959" selection-end-column="23" />
+          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/trade/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="25">
+          <caret line="112" column="18" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
           <folding>
-            <element signature="e#18#48#0" expanded="true" />
+            <element signature="e#18#29#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="841" column="24" selection-start-line="841" selection-start-column="24" selection-end-line="841" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/trade/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        <state relative-caret-position="-127">
+          <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/trade/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
