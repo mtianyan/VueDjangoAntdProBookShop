@@ -13,6 +13,8 @@ import datetime
 import os
 import sys
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from past.builtins import execfile
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,BASE_DIR)
 sys.path.insert(0,os.path.join(BASE_DIR, 'apps'))
@@ -27,7 +29,7 @@ SECRET_KEY = 'y5yew=o5yey*9ydgt74-st11qkt$3n_i9r-c+aw$lt0%x3%a^)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # 设置邮箱和用户名和手机号均可登录
 AUTHENTICATION_BACKENDS = (
@@ -106,8 +108,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'vue_shop',
         'USER': 'root',
-        'PASSWORD': 'tp158917',
-        'HOST':'127.0.0.1',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
         "OPTIONS": {"init_command": "SET default_storage_engine=INNODB;"}
     }
 }
@@ -175,4 +177,17 @@ JWT_AUTH = {
 REGEX_MOBILE = "^1[358]\d{9}$|^147\d{8}$|^176\d{8}$"
 
 # 云片网设置
-APIKEY = 'd6c4ddbf50ab36611d2f52041a0b949e'
+APIKEY = ''
+
+REMOTE_DEBUG = False
+PROJECT_ROOT = os.path.join(BASE_DIR, 'VueDjangoFrameWorkShop')
+if DEBUG:
+    try:
+        execfile(os.path.join(PROJECT_ROOT, 'local_settings.py'))
+    except IOError:
+        pass
+else:
+    try:
+        execfile(os.path.join(PROJECT_ROOT, 'dev_settings.py'))
+    except IOError:
+        pass
