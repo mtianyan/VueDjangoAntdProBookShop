@@ -28,6 +28,14 @@ class UserFavViewset(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.Crea
     # lookup_field = 'goods'
     authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
 
+    # 收藏数+1
+    # def perform_create(self, serializer):
+    #     instance = serializer.save()
+    #     # 通过这个instance Userfav找到goods
+    #     goods = instance.goods
+    #     goods.fav_num +=1
+    #     goods.save()
+
     def get_queryset(self):
         return UserFav.objects.filter(user=self.request.user)
 

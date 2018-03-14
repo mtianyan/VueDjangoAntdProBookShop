@@ -22,7 +22,7 @@ from django.contrib import admin
 from django.urls import path, re_path, include
 from django.views.generic import TemplateView
 from VueDjangoFrameWorkShop.settings import MEDIA_ROOT
-from goods.views import GoodsListViewSet, CategoryViewset, BannerViewset
+from goods.views import GoodsListViewSet, CategoryViewset, BannerViewset, IndexCategoryViewset
 from trade.views import ShoppingCartViewset, OrderViewset, AlipayView
 from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
 from users.views import SmsCodeViewset, UserViewset
@@ -66,6 +66,11 @@ router.register(r'orders', OrderViewset, base_name="orders")
 
 # 首页banner轮播图url
 router.register(r'banners', BannerViewset, base_name="banners")
+
+# 首页系列商品展示url
+router.register(r'indexgoods', IndexCategoryViewset, base_name="indexgoods")
+
+
 
 # from VueDjangoFrameWorkShop.settings import STATIC_ROOT
 

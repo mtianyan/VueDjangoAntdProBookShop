@@ -28,26 +28,32 @@ class ShoppingCartViewset(viewsets.ModelViewSet):
     serializer_class = ShopCartSerializer
     lookup_field = "goods_id"
 
-    # def perform_create(self, serializer):
-    #     shop_cart = serializer.save()
-    #     goods = shop_cart.goods
-    #     goods.goods_num -= shop_cart.nums
-    #     goods.save()
-    #
-    # def perform_destroy(self, instance):
-    #     goods = instance.goods
-    #     goods.goods_num += instance.nums
-    #     goods.save()
-    #     instance.delete()
+    # 库存数-1
+    def perform_create(self, serializer):
+        shop_cart = serializer.save()
+        goods = shop_cart.goods
+        goods.goods_num -= shop_cart.nums
+        goods.save()
 
-    # def perform_update(self, serializer):
-    #     existed_record = ShoppingCart.objects.get(id=serializer.instance.id)
-    #     existed_nums = existed_record.nums
-    #     saved_record = serializer.save()
-    #     nums = saved_record.nums-existed_nums
-    #     goods = saved_record.goods
-    #     goods.goods_num -= nums
-    #     goods.save()
+    # 库存数+1
+    def perform_destroy(self, instance):
+        goods = instance.goods
+        goods.goods_num += instance.nums
+        goods.save()
+        # 取goods在del之前取之后就被删掉了
+        instance.delete()
+
+    # 更新库存
+    def perform_update(self, serializer):
+        existed_record = ShoppingCart.objects.get(id=serializer.instance.id)
+        existed_nums = existed_record.nums
+        # 先保存之前的数据existed_nums
+        saved_record = serializer.save()
+        # 变化的数量
+        nums = saved_record.nums - existed_nums
+        goods = saved_record.goods
+        goods.goods_num -= nums
+        goods.save()
 
     def get_serializer_class(self):
         if self.action == 'list':
