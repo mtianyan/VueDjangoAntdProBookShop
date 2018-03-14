@@ -22,7 +22,7 @@ from django.contrib import admin
 from django.urls import path, re_path, include
 from django.views.generic import TemplateView
 from VueDjangoFrameWorkShop.settings import MEDIA_ROOT
-from goods.views import GoodsListViewSet, CategoryViewset
+from goods.views import GoodsListViewSet, CategoryViewset, BannerViewset
 from trade.views import ShoppingCartViewset, OrderViewset, AlipayView
 from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
 from users.views import SmsCodeViewset, UserViewset
@@ -64,7 +64,10 @@ router.register(r'shopcarts', ShoppingCartViewset, base_name="shopcarts")
 # 订单相关url
 router.register(r'orders', OrderViewset, base_name="orders")
 
-from VueDjangoFrameWorkShop.settings import STATIC_ROOT
+# 首页banner轮播图url
+router.register(r'banners', BannerViewset, base_name="banners")
+
+# from VueDjangoFrameWorkShop.settings import STATIC_ROOT
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
@@ -97,5 +100,5 @@ urlpatterns = [
     # 首页
     path('index/', TemplateView.as_view(template_name='index.html'), name='index'),
 
-    re_path('static/(?P<path>.*)', serve, {"document_root": STATIC_ROOT}),
+    # re_path('static/(?P<path>.*)', serve, {"document_root": STATIC_ROOT}),
 ]

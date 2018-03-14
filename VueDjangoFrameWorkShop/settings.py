@@ -16,7 +16,7 @@ import sys
 from past.builtins import execfile
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0,BASE_DIR)
+# sys.path.insert(0,BASE_DIR)
 sys.path.insert(0,os.path.join(BASE_DIR, 'apps'))
 sys.path.insert(0,os.path.join(BASE_DIR, 'extra_apps'))
 
@@ -152,12 +152,15 @@ USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-
+# 设置上传文件，图片访问路径
 STATIC_URL = '/static/'
 
-# 设置上传文件，图片访问路径
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+MEDIA_URL = "/media/"
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # 所有与drf相关的设置写在这里面
 REST_FRAMEWORK = {
@@ -166,12 +169,6 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     )
 }
-
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "static"),
-# ]
 
 # 与drf的jwt相关的设置
 JWT_AUTH = {
@@ -189,7 +186,7 @@ APIKEY = ''
 private_key_path = os.path.join(BASE_DIR, 'apps/trade/keys/private_2048.txt')
 ali_pub_key_path = os.path.join(BASE_DIR, 'apps/trade/keys/alipay_key_2048.txt')
 
-REMOTE_DEBUG = True
+REMOTE_DEBUG = False
 PROJECT_ROOT = os.path.join(BASE_DIR, 'VueDjangoFrameWorkShop')
 if DEBUG and REMOTE_DEBUG:
     try:

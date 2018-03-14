@@ -10,8 +10,8 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from goods.filters import GoodsFilter
-from goods.serializers import GoodsSerializer, CategorySerializer
-from .models import Goods, GoodsCategory
+from goods.serializers import GoodsSerializer, CategorySerializer, BannerSerializer
+from .models import Goods, GoodsCategory, Banner
 from rest_framework import mixins
 from rest_framework import generics
 from rest_framework import viewsets
@@ -100,3 +100,11 @@ class CategoryViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets
     """
     queryset = GoodsCategory.objects.filter(category_type=1)
     serializer_class = CategorySerializer
+
+
+class BannerViewset(mixins.ListModelMixin, viewsets.GenericViewSet):
+    """
+    获取轮播图列表
+    """
+    queryset = Banner.objects.all().order_by("index")
+    serializer_class = BannerSerializer

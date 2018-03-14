@@ -2,26 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe981b6f-86fe-436c-a1a4-53d5f0fd0c95" name="Default" comment="完成订单接口以及订单详情商品数据的显示。">
-      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/VueDjangoFrameWorkShop/local_settings.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/trade/keys/alipay_key_2048.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/trade/keys/private_2048.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/trade/keys/pub_2048.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/iconfont.60cf513.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/iconfont.fcaaa27.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/loginBg1.23c7104.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/index.entry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/VueDjangoFrameWorkShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VueDjangoFrameWorkShop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/trade/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trade/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/trade/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trade/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/utils/alipay.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/alipay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/iconfont.60cf513.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/iconfont.fcaaa27.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/loginBg1.23c7104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.entry.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +37,86 @@
     <favorites_list name="VueDjangoFrameWorkShop" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/trade/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2451">
+              <caret line="141" column="24" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1653">
+              <caret line="105" column="7" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="969">
+              <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1083">
+              <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="159" column="1" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
+              <folding>
+                <element signature="e#322#337#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="local_settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/local_settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dev_settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/dev_settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/goods/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="988">
+              <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,8 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>HTMLFormRenderer</find>
-      <find>get_f</find>
       <find>get_filter_form</find>
       <find>base.</find>
       <find>base.h</find>
@@ -84,6 +156,8 @@
       <find>update</find>
       <find>appid</find>
       <find>redirect</find>
+      <find>static</find>
+      <find>xadmin</find>
     </findStrings>
     <dirStrings>
       <dir>D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop</dir>
@@ -123,8 +197,6 @@
         <option value="$PROJECT_DIR$/apps/users/signals.py" />
         <option value="$PROJECT_DIR$/apps/users/apps.py" />
         <option value="$PROJECT_DIR$/extra_apps/rest_framework/views.py" />
-        <option value="$PROJECT_DIR$/apps/goods/views.py" />
-        <option value="$PROJECT_DIR$/apps/goods/serializers.py" />
         <option value="$PROJECT_DIR$/apps/goods/filters.py" />
         <option value="$PROJECT_DIR$/apps/utils/permissions.py" />
         <option value="$PROJECT_DIR$/apps/users/models.py" />
@@ -143,10 +215,12 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/apps/trade/serializers.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py" />
-        <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" />
         <option value="$PROJECT_DIR$/apps/utils/alipay.py" />
         <option value="$PROJECT_DIR$/apps/trade/views.py" />
+        <option value="$PROJECT_DIR$/apps/goods/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/goods/views.py" />
+        <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" />
+        <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py" />
       </list>
     </option>
   </component>
@@ -157,7 +231,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -169,6 +243,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="VueDjangoFrameWorkShop" type="cbb8eebc:String" user="VueDjangoFrameWorkShop" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,45 +265,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="VueDjangoFrameWorkShop" type="cbb8eebc:String" user="VueDjangoFrameWorkShop" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="VueDjangoFrameWorkShop" type="cbb8eebc:String" user="VueDjangoFrameWorkShop" />
-              <item name="apps" type="cbb8eebc:String" user="apps" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="VueDjangoFrameWorkShop" type="cbb8eebc:String" user="VueDjangoFrameWorkShop" />
-              <item name="apps" type="cbb8eebc:String" user="apps" />
-              <item name="trade" type="cbb8eebc:String" user="trade" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="VueDjangoFrameWorkShop" type="cbb8eebc:String" user="VueDjangoFrameWorkShop" />
-              <item name="static" type="cbb8eebc:String" user="static" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="VueDjangoFrameWorkShop" type="cbb8eebc:String" user="VueDjangoFrameWorkShop" />
-              <item name="VueDjangoFrameWorkShop" type="cbb8eebc:String" user="VueDjangoFrameWorkShop" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../movie_project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -247,7 +300,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.VueDjangoFrameWorkShop_remote">
+  <component name="RunManager" selected="Django server.VueDjangoFrameWorkShop_local">
     <configuration name="alipay" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="VueDjangoFrameWorkShop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -489,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520957338549</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="完成支付宝对接，vue联调。第十章完结，撒花">
+      <created>1521007636604</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1521007636604</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -506,13 +566,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.328" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.34801763" side_tool="true" weight="0.4448" />
-      <window_info anchor="bottom" id="File Transfer" order="8" sideWeight="0.4904552" weight="0.32649842" />
+      <window_info anchor="bottom" id="File Transfer" order="8" sideWeight="0.4904552" visible="true" weight="0.32492113" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49122807" weight="0.32893" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32893" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65198237" weight="0.4384858" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65198237" weight="0.43217665" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4919473" weight="0.32334384" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49053627" visible="true" weight="0.17423134" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -520,11 +581,11 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.4273183" />
       <window_info id="Favorites" order="2" sideWeight="0.5094637" side_tool="true" weight="0.1566618" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4904552" weight="0.43059936" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4904552" weight="0.4304" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="manage.py@VueDjangoFrameWorkShop" order="7" weight="0.32649842" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -574,7 +635,8 @@
     <MESSAGE value="完成购物车接口以及与vue的联调。" />
     <MESSAGE value="完成订单接口以及订单详情商品数据的显示。" />
     <MESSAGE value="进度: notifyurl的配置未完成。" />
-    <option name="LAST_COMMIT_MESSAGE" value="进度: notifyurl的配置未完成。" />
+    <MESSAGE value="完成支付宝对接，vue联调。第十章完结，撒花" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成支付宝对接，vue联调。第十章完结，撒花" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -667,13 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../PythonEnvs/mxshop36/Lib/site-packages/rest_framework_jwt/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -706,13 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -842,27 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="101" column="41" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/local_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/dev_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
@@ -898,16 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="189" selection-start-line="189" selection-end-line="189" />
-          <folding>
-            <element signature="e#322#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extra_apps/rest_framework/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-19">
@@ -915,30 +932,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="97" column="73" selection-start-line="97" selection-start-column="73" selection-end-line="97" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/utils/alipay.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="112" column="23" selection-start-line="112" selection-start-column="23" selection-end-line="112" selection-end-column="23" />
-          <folding>
-            <element signature="e#77#106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/trade/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="138" column="34" selection-start-line="138" selection-start-column="34" selection-end-line="138" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -946,6 +943,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/local_settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/dev_settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1653">
+          <caret line="105" column="7" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/trade/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2451">
+          <caret line="141" column="24" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="159" column="1" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
+          <folding>
+            <element signature="e#322#337#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
