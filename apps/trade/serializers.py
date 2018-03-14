@@ -1,10 +1,12 @@
 # encoding: utf-8
 import time
 
+from VueDjangoFrameWorkShop.settings import private_key_path, ali_pub_key_path
 from goods.models import Goods
 from goods.serializers import GoodsSerializer
 from rest_framework import serializers
 from trade.models import ShoppingCart, OrderInfo, OrderGoods
+from utils.alipay import AliPay
 
 __author__ = 'mtianyan'
 __date__ = '2018/3/11 0011 16:19'
@@ -72,28 +74,27 @@ class OrderSerializer(serializers.ModelSerializer):
     order_sn = serializers.CharField(read_only=True)
     pay_time = serializers.DateTimeField(read_only=True)
 
-    # alipay_url = serializers.SerializerMethodField(read_only=True)
+    alipay_url = serializers.SerializerMethodField(read_only=True)
 
-    # def get_alipay_url(self, obj):
-    #     alipay = AliPay(
-    #         appid="",
-    #         app_notify_url="http://127.0.0.1:8000/alipay/return/",
-    #         app_private_key_path=private_key_path,
-    #         alipay_public_key_path=ali_pub_key_path,  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
-    #         debug=True,  # 默认False,
-    #         return_url="http://127.0.0.1:8000/alipay/return/"
-    #     )
-    #
-    #     url = alipay.direct_pay(
-    #         subject=obj.order_sn,
-    #         out_trade_no=obj.order_sn,
-    #         total_amount=obj.order_mount,
-    #     )
-    #     re_url = "https://openapi.alipaydev.com/gateway.do?{data}".format(data=url)
-    #
-    #     return re_url
-    #
-    #
+    def get_alipay_url(self, obj):
+        alipay = AliPay(
+            appid="2016091200490210",
+            app_notify_url="http://115.159.122.64:8000/alipay/return/",
+            app_private_key_path=private_key_path,
+            alipay_public_key_path=ali_pub_key_path,  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
+            debug=True,  # 默认False,
+            return_url="http://115.159.122.64:8000/alipay/return/"
+        )
+
+        url = alipay.direct_pay(
+            subject=obj.order_sn,
+            out_trade_no=obj.order_sn,
+            total_amount=obj.order_mount,
+        )
+        re_url = "https://openapi.alipaydev.com/gateway.do?{data}".format(data=url)
+
+        return re_url
+
     def generate_order_sn(self):
         # 当前时间+userid+随机数
         from random import Random
@@ -117,26 +118,26 @@ class OrderDetailSerializer(serializers.ModelSerializer):
     # 一个订单有多个订单商品项
     goods = OrderGoodsSerialzier(many=True)
 
-    # alipay_url = serializers.SerializerMethodField(read_only=True)
-    #
-    # def get_alipay_url(self, obj):
-    #     alipay = AliPay(
-    #         appid="",
-    #         app_notify_url="http://127.0.0.1:8000/alipay/return/",
-    #         app_private_key_path=private_key_path,
-    #         alipay_public_key_path=ali_pub_key_path,  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
-    #         debug=True,  # 默认False,
-    #         return_url="http://127.0.0.1:8000/alipay/return/"
-    #     )
-    #
-    #     url = alipay.direct_pay(
-    #         subject=obj.order_sn,
-    #         out_trade_no=obj.order_sn,
-    #         total_amount=obj.order_mount,
-    #     )
-    #     re_url = "https://openapi.alipaydev.com/gateway.do?{data}".format(data=url)
-    #
-    #     return re_url
+    alipay_url = serializers.SerializerMethodField(read_only=True)
+
+    def get_alipay_url(self, obj):
+        alipay = AliPay(
+            appid="2016091200490210",
+            app_notify_url="http://115.159.122.64:8000/alipay/return/",
+            app_private_key_path=private_key_path,
+            alipay_public_key_path=ali_pub_key_path,  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
+            debug=True,  # 默认False,
+            return_url="http://115.159.122.64:8000/alipay/return/"
+        )
+
+        url = alipay.direct_pay(
+            subject=obj.order_sn,
+            out_trade_no=obj.order_sn,
+            total_amount=obj.order_mount,
+        )
+        re_url = "https://openapi.alipaydev.com/gateway.do?{data}".format(data=url)
+
+        return re_url
 
     class Meta:
         model = OrderInfo

@@ -167,6 +167,12 @@ REST_FRAMEWORK = {
     )
 }
 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "static"),
+# ]
+
 # 与drf的jwt相关的设置
 JWT_AUTH = {
     'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=3600),
@@ -179,9 +185,18 @@ REGEX_MOBILE = "^1[358]\d{9}$|^147\d{8}$|^176\d{8}$"
 # 云片网设置
 APIKEY = ''
 
-REMOTE_DEBUG = False
+# 支付宝相关的key路径
+private_key_path = os.path.join(BASE_DIR, 'apps/trade/keys/private_2048.txt')
+ali_pub_key_path = os.path.join(BASE_DIR, 'apps/trade/keys/alipay_key_2048.txt')
+
+REMOTE_DEBUG = True
 PROJECT_ROOT = os.path.join(BASE_DIR, 'VueDjangoFrameWorkShop')
-if DEBUG:
+if DEBUG and REMOTE_DEBUG:
+    try:
+        execfile(os.path.join(PROJECT_ROOT, 'dev_settings.py'))
+    except IOError:
+        pass
+elif DEBUG:
     try:
         execfile(os.path.join(PROJECT_ROOT, 'local_settings.py'))
     except IOError:

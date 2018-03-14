@@ -13,16 +13,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.views.static import serve
 from rest_framework.documentation import include_docs_urls
 
 import xadmin
 from django.contrib import admin
 from django.urls import path, re_path, include
-
+from django.views.generic import TemplateView
 from VueDjangoFrameWorkShop.settings import MEDIA_ROOT
 from goods.views import GoodsListViewSet, CategoryViewset
-from trade.views import ShoppingCartViewset, OrderViewset
+from trade.views import ShoppingCartViewset, OrderViewset, AlipayView
 from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
 from users.views import SmsCodeViewset, UserViewset
 # from goods.views import GoodsListView,
@@ -63,6 +64,8 @@ router.register(r'shopcarts', ShoppingCartViewset, base_name="shopcarts")
 # 订单相关url
 router.register(r'orders', OrderViewset, base_name="orders")
 
+from VueDjangoFrameWorkShop.settings import STATIC_ROOT
+
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),
@@ -86,5 +89,13 @@ urlpatterns = [
     path('api-token-auth/', views.obtain_auth_token),
 
     # jwt的token认证
-    path('login/', obtain_jwt_token )
+    path('login/', obtain_jwt_token),
+
+    # 支付宝支付相关接口
+    path('alipay/return/', AlipayView.as_view()),
+
+    # 首页
+    path('index/', TemplateView.as_view(template_name='index.html'), name='index'),
+
+    re_path('static/(?P<path>.*)', serve, {"document_root": STATIC_ROOT}),
 ]
