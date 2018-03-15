@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework.authtoken',
     'social_django',
+    'raven.contrib.django.raven_compat',
 ]
 
 MIDDLEWARE = [
@@ -223,6 +224,14 @@ SOCIAL_AUTH_QQ_SECRET = 'bazqux'
 
 SOCIAL_AUTH_WEIXIN_KEY = 'foobar'
 SOCIAL_AUTH_WEIXIN_SECRET = 'bazqux'
+
+# sentry设置
+import os
+import raven
+
+RAVEN_CONFIG = {
+    'dsn': 'https://<key>:<secret>@sentry.io/<project>',
+}
 
 REMOTE_DEBUG = True
 PROJECT_ROOT = os.path.join(BASE_DIR, 'VueDjangoFrameWorkShop')

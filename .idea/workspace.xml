@@ -2,298 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe981b6f-86fe-436c-a1a4-53d5f0fd0c95" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/VueDjangoFrameWorkShop/local_settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/trade/keys/alipay_key_2048.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/trade/keys/private_2048.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/apps/trade/keys/pub_2048.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/utils/weibo_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/actions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/amazon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/angel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/aol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/appsfuel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/arcgis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/asana.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/azuread.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/azuread_b2c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/azuread_tenant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/battlenet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/beats.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/behance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/belgiumeid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/bitbucket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/box.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/bungie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/changetip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/chatwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/classlink.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/clef.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/coding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/coinbase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/coursera.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/dailymotion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/deezer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/digitalocean.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/disqus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/docker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/douban.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/dribbble.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/drip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/dropbox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/echosign.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/edmodo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/email.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/eventbrite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/eveonline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/evernote.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/exacttarget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/facebook.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/fedora.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/fitbit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/five_hundred_px.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/flickr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/foursquare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/gae.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/github.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/github_enterprise.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/gitlab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/goclio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/goclioeu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/google.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/google_openidconnect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/instagram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/itembase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/jawbone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/justgiving.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/kakao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/khanacademy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/lastfm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/launchpad.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/legacy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/line.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/linkedin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/live.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/livejournal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/loginradius.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/lyft.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mailchimp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mailru.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mapmyfitness.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mediawiki.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/meetup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mendeley.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/microsoft.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mineid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/mixcloud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/monzo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/moves.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/nationbuilder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/naver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/ngpvan.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/nk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/oauth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/odnoklassniki.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/open_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/open_id_connect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/openshift.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/openstreetmap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/orbi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/orcid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/patreon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/persona.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/phabricator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/pinterest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/pixelpin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/pocket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/podio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/professionali.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/pushbullet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/qiita.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/qq.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/quizlet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/rdio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/readability.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/reddit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/runkeeper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/salesforce.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/saml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/shimmering.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/shopify.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/sketchfab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/skyrock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/slack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/soundcloud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/spotify.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/stackoverflow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/steam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/stocktwits.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/strava.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/stripe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/suse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/taobao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/thisismyjam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/trello.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/tripit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/tumblr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/twilio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/twitch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/twitter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/uber.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/ubuntu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/udata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/untappd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/upwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/username.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/vend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/vimeo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/vk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/weibo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/weixin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/withings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/wunderlist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/xing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/yahoo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/yammer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/yandex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/backends/zotero.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/debug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/disconnect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/mail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/partial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/social_auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/pipeline/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/store.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/strategy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/actions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/actions/actions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/actions/test_associate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/actions/test_disconnect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/actions/test_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/data/saml_response.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/legacy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/oauth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/open_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/open_id_connect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_amazon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_angel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_arcgis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_asana.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_azuread.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_azuread_b2c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_behance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_bitbucket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_box.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_broken.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_chatwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_clef.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_coinbase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_coursera.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_dailymotion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_deezer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_digitalocean.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_disqus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_dribbble.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_drip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_dropbox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_dummy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_edmodo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_email.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_eventbrite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_evernote.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_facebook.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_fitbit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_five_hundred_px.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_flickr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_foursquare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_github.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_github_enterprise.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_gitlab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_google.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_instagram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_itembase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_kakao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_khanacademy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_linkedin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_live.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_livejournal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_lyft.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_mapmyfitness.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_mineid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_mixcloud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_nationbuilder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_naver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_ngpvan.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_orbi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_patreon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_phabricator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_pinterest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_podio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_qiita.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_quizlet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_readability.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_reddit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_saml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_sketchfab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_skyrock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_slack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_soundcloud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_spotify.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_stackoverflow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_steam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_stocktwits.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_strava.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_stripe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_taobao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_thisismyjam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_tripit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_tumblr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_twitch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_twitter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_uber.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_udata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_upwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_username.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_vk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_wunderlist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_xing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_yahoo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_yammer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_yandex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/backends/test_zotero.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/requirements-base.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/requirements-pypy.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/requirements-python2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/requirements-python3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/strategy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/test_exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/test_partial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/test_pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/test_storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/test_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/tests/testkey.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/social_core/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_sentry/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_sentry/sentry_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/goods/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.entry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -307,6 +23,7 @@
     <SUITE FILE_PATH="coverage/VueDjangoFrameWorkShop$yunpian.coverage" NAME="yunpian Coverage Results" MODIFIED="1520475876058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
     <SUITE FILE_PATH="coverage/VueDjangoFrameWorkShop$alipay.coverage" NAME="alipay Coverage Results" MODIFIED="1521002870402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
     <SUITE FILE_PATH="coverage/VueDjangoFrameWorkShop$weibo_login.coverage" NAME="weibo_login Coverage Results" MODIFIED="1521098039998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
+    <SUITE FILE_PATH="coverage/VueDjangoFrameWorkShop$sentry_test.coverage" NAME="sentry_test Coverage Results" MODIFIED="1521123649332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_sentry" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -315,12 +32,12 @@
     <favorites_list name="VueDjangoFrameWorkShop" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="226" column="19" selection-start-line="226" selection-start-column="19" selection-end-line="226" selection-end-column="19" />
+            <state relative-caret-position="164">
+              <caret line="232" column="56" selection-start-line="232" selection-start-column="56" selection-end-line="232" selection-end-column="56" />
               <folding>
                 <element signature="e#322#337#0" expanded="true" />
               </folding>
@@ -328,14 +45,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actions.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/extra_apps/social_core/actions.py">
+      <file leaf-file-name="dev_settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/dev_settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+            <state relative-caret-position="228">
+              <caret line="12" column="107" selection-start-line="12" selection-start-column="107" selection-end-line="12" selection-end-column="107" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#142#151#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -394,8 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/apps/trade/apps.py" />
-        <option value="$PROJECT_DIR$/db_tools/import_category_data.py" />
         <option value="$PROJECT_DIR$/db_tools/import_goods_data.py" />
         <option value="$PROJECT_DIR$/apps/goods/views_base.py" />
         <option value="$PROJECT_DIR$/templates/api.html" />
@@ -438,13 +162,15 @@
         <option value="$PROJECT_DIR$/apps/user_operation/signals.py" />
         <option value="$PROJECT_DIR$/apps/trade/views.py" />
         <option value="$PROJECT_DIR$/apps/utils/weibo_login.py" />
-        <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/dev_settings.py" />
         <option value="$PROJECT_DIR$/apps/goods/serializers.py" />
         <option value="$PROJECT_DIR$/apps/goods/views.py" />
         <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py" />
         <option value="$PROJECT_DIR$/extra_apps/social_core/actions.py" />
+        <option value="$PROJECT_DIR$/test_sentry/sentry_test.py" />
+        <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py" />
+        <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/dev_settings.py" />
+        <option value="$PROJECT_DIR$/Readme.md" />
       </list>
     </option>
   </component>
@@ -467,6 +193,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="VueDjangoFrameWorkShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VueDjangoFrameWorkShop" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -523,28 +260,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="VueDjangoFrameWorkShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VueDjangoFrameWorkShop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VueDjangoFrameWorkShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VueDjangoFrameWorkShop" type="462c0819:PsiDirectoryNode" />
-              <item name="extra_apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VueDjangoFrameWorkShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VueDjangoFrameWorkShop" type="462c0819:PsiDirectoryNode" />
-              <item name="extra_apps" type="462c0819:PsiDirectoryNode" />
-              <item name="social_core" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -556,18 +271,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\static" />
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\extra_apps" />
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\apps\goods" />
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\templates" />
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\templates" />
       <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\apps\user_operation" />
       <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\apps\goods" />
       <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\apps" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop" />
+      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\static" />
+      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\extra_apps" />
+      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\apps\goods" />
+      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -582,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.VueDjangoFrameWorkShop_remote">
+  <component name="RunManager" selected="Python.sentry_test">
     <configuration name="alipay" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="VueDjangoFrameWorkShop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -602,25 +317,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="import_category_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VueDjangoFrameWorkShop" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db_tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_tools/import_category_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="import_goods_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="VueDjangoFrameWorkShop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -635,6 +331,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_tools/import_goods_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="sentry_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="VueDjangoFrameWorkShop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_sentry" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_sentry/sentry_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -727,14 +442,15 @@
     <list>
       <item itemvalue="Django server.VueDjangoFrameWorkShop_remote" />
       <item itemvalue="Django server.VueDjangoFrameWorkShop_local" />
-      <item itemvalue="Python.import_category_data" />
       <item itemvalue="Python.import_goods_data" />
       <item itemvalue="Python.yunpian" />
       <item itemvalue="Python.alipay" />
       <item itemvalue="Python.weibo_login" />
+      <item itemvalue="Python.sentry_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sentry_test" />
         <item itemvalue="Python.weibo_login" />
         <item itemvalue="Python.alipay" />
         <item itemvalue="Python.yunpian" />
@@ -866,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521031641057</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="完成第三方登录的开发。修复了vue联调中无法显示用户名的bug">
+      <created>1521120695536</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1521120695536</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -887,23 +610,23 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.328" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.34948605" side_tool="true" weight="0.4384" />
-      <window_info anchor="bottom" id="File Transfer" order="8" sideWeight="0.4904552" weight="0.3280757" />
+      <window_info anchor="bottom" id="File Transfer" order="8" sideWeight="0.4904552" weight="0.3328" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49122807" weight="0.32893" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32893" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65051395" visible="true" weight="0.43533123" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4919473" weight="0.32334384" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65051395" weight="0.4416" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4919473" weight="0.3216" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49053627" visible="true" weight="0.18960468" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="manage.py@VueDjangoFrameWorkShop" order="7" visible="true" weight="0.3170347" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.4273183" />
       <window_info id="Favorites" order="2" sideWeight="0.5094637" side_tool="true" weight="0.1566618" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4904552" weight="0.4242902" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="manage.py@VueDjangoFrameWorkShop" order="7" visible="true" weight="0.32176656" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298153" />
@@ -912,24 +635,24 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.50775194" side_tool="true" weight="0.29699248" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49224806" weight="0.34051725" />
       <window_info id="Structure" order="1" weight="0.4273183" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49122807" weight="0.32893" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49498746" visible="true" weight="0.31836197" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298153" />
       <window_info anchor="bottom" id="manage.py@VueDjangoFrameWorkShop" order="12" weight="0.32893" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4924812" weight="0.32453826" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50877196" side_tool="true" weight="0.32893" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49122807" weight="0.32893" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3989432" />
-      <window_info id="Favorites" order="2" sideWeight="0.50775194" side_tool="true" weight="0.29699248" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -955,7 +678,8 @@
     <MESSAGE value="完成支付宝对接，vue联调。第十章完结，撒花" />
     <MESSAGE value="修复xadmin因为debug不显示图片的bug。。。！！！自己的devsetting文件中debug=False" />
     <MESSAGE value="完成 首页、商品数量、缓存、限速功能开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成 首页、商品数量、缓存、限速功能开发" />
+    <MESSAGE value="完成第三方登录的开发。修复了vue联调中无法显示用户名的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -964,13 +688,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../PythonEnvs/mxshop36/Lib/site-packages/rest_framework_jwt/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1083,13 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/trade/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -1185,9 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="191" column="29" selection-start-line="191" selection-start-column="29" selection-end-line="191" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1261,20 +968,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/dev_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="128" column="23" selection-start-line="128" selection-start-column="6" selection-end-line="128" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1306,26 +1003,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/index.entry.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/extra_apps/social_core/actions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_sentry/sentry_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="6" column="114" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="226" column="19" selection-start-line="226" selection-start-column="19" selection-end-line="226" selection-end-column="19" />
+        <state relative-caret-position="164">
+          <caret line="232" column="56" selection-start-line="232" selection-start-column="56" selection-end-line="232" selection-end-column="56" />
           <folding>
             <element signature="e#322#337#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/social_core/actions.py">
+    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/dev_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+        <state relative-caret-position="228">
+          <caret line="12" column="107" selection-start-line="12" selection-start-column="107" selection-end-line="12" selection-end-column="107" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#142#151#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
         </state>
       </provider>
     </entry>
