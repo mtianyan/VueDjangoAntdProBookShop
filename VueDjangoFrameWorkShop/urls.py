@@ -22,7 +22,7 @@ from django.contrib import admin
 from django.urls import path, re_path, include
 from django.views.generic import TemplateView
 from VueDjangoFrameWorkShop.settings import MEDIA_ROOT
-from goods.views import GoodsListViewSet, CategoryViewset, BannerViewset, IndexCategoryViewset
+from goods.views import GoodsListViewSet, CategoryViewset, BannerViewset, IndexCategoryViewset, HotSearchsViewset
 from trade.views import ShoppingCartViewset, OrderViewset, AlipayView
 from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
 from users.views import SmsCodeViewset, UserViewset
@@ -70,7 +70,8 @@ router.register(r'banners', BannerViewset, base_name="banners")
 # 首页系列商品展示url
 router.register(r'indexgoods', IndexCategoryViewset, base_name="indexgoods")
 
-
+# 热搜词
+router.register(r'hotsearchs', HotSearchsViewset, base_name="hotsearchs")
 
 # from VueDjangoFrameWorkShop.settings import STATIC_ROOT
 
@@ -106,4 +107,7 @@ urlpatterns = [
     path('index/', TemplateView.as_view(template_name='index.html'), name='index'),
 
     # re_path('static/(?P<path>.*)', serve, {"document_root": STATIC_ROOT}),
+
+    # 第三方登录
+    path('', include('social_django.urls', namespace='social'))
 ]
