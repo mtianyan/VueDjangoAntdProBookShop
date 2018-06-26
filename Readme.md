@@ -7,7 +7,7 @@
 
 项目支持支付宝支付(暂不支持微信支付),支持手机短信验证码注册， 支持第三方登录。集成了sentry错误监控系统。
 
->线上演示地址: http://vueshop.mtianyan.cn
+>线上演示地址: http://vueshop.mtianyan.cn/index
 
 ## Quick Start
 
