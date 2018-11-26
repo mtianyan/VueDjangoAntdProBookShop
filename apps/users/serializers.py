@@ -5,7 +5,7 @@ __author__ = 'mtianyan'
 __date__ = '2018/3/8 0008 09:41'
 import re
 from datetime import datetime, timedelta
-from VueDjangoFrameWorkShop.settings import REGEX_MOBILE
+from VueDjangoRestFrameworkBookStore.settings import REGEX_MOBILE
 from users.models import VerifyCode
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
@@ -64,11 +64,11 @@ class UserRegSerializer(serializers.ModelSerializer):
 
     # 调用父类的create方法，该方法会返回当前model的实例化对象即user。
     # 前面是将父类原有的create进行执行，后面是加入自己的逻辑
-    # def create(self, validated_data):
-    #     user = super(UserRegSerializer, self).create(validated_data=validated_data)
-    #     user.set_password(validated_data["password"])
-    #     user.save()
-    #     return user
+    def create(self, validated_data):
+        user = super(UserRegSerializer, self).create(validated_data=validated_data)
+        user.set_password(validated_data["password"])
+        user.save()
+        return user
 
     def validate_code(self, code):
 

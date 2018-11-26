@@ -5,6 +5,7 @@ from users.models import UserProfile
 from goods.models import Goods
 # 但是当第三方模块根本不知道你的user model在哪里如何导入呢
 from django.contrib.auth import get_user_model
+
 # 这个方法会去setting中找AUTH_USER_MODEL
 User = get_user_model()
 
@@ -31,14 +32,17 @@ class ShoppingCart(models.Model):
 
 class OrderInfo(models.Model):
     """
-    订单信息
+    订单信息: 待付款、待发货(已支付)、待收货(卖家已发货)、待评价、交易成功/失败, 待退款, 已退款、交易关闭(锁定)
     """
     ORDER_STATUS = (
-        ("TRADE_SUCCESS", "成功"),
-        ("TRADE_CLOSED", "超时关闭"),
-        ("WAIT_BUYER_PAY", "交易创建"),
-        ("TRADE_FINISHED", "交易结束"),
-        ("paying", "待支付"),
+        ("TRADE_SUCCESS", "交易完成"),
+        ("REFUNDED", "已退款"),
+        ("WAIT_REFUND", "待退款"),
+        ("TRADE_CLOSED", "交易关闭"),
+        ("WAIT_COMMENT", "待评价"),
+        ("WAIT_ARRIVE", "待收货"),
+        ("WAIT_SEND", "待发货"),
+        ("PAY_ING", "待付款"),
     )
     PAY_TYPE = (
         ("alipay", "支付宝"),
@@ -53,7 +57,7 @@ class OrderInfo(models.Model):
     # 支付宝支付时的交易号与本系统进行关联
     trade_no = models.CharField(max_length=100, unique=True, null=True, blank=True, verbose_name=u"交易号")
     # 以防用户支付到一半不支付了
-    pay_status = models.CharField(choices=ORDER_STATUS, default="paying", max_length=30, verbose_name="订单状态")
+    pay_status = models.CharField(choices=ORDER_STATUS, default="PAY_ING", max_length=30, verbose_name="订单状态")
     # 订单的支付类型
     pay_type = models.CharField(choices=PAY_TYPE, default="alipay", max_length=10, verbose_name="支付类型")
     post_script = models.CharField(max_length=200, verbose_name="订单留言")

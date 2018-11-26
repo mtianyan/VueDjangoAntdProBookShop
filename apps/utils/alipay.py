@@ -34,10 +34,10 @@ class AliPay(object):
         with open(self.alipay_public_key_path) as fp:
             self.alipay_public_key = RSA.import_key(fp.read())
 
-        if debug is True:
-            self.__gateway = "https://openapi.alipaydev.com/gateway.do"
-        else:
-            self.__gateway = "https://openapi.alipay.com/gateway.do"
+        # if debug is True:
+           # self.__gateway = "https://openapi.alipaydev.com/gateway.do"
+        # else:
+        self.__gateway = "https://openapi.alipay.com/gateway.do"
 
     def direct_pay(self, subject, out_trade_no, total_amount, return_url=None, **kwargs):
         biz_content = {

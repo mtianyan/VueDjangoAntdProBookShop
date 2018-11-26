@@ -8,7 +8,7 @@ from django.core.exceptions import SuspiciousOperation, ImproperlyConfigured, Va
 from django.db import models
 from django.db.models.fields import FieldDoesNotExist
 from django.db.models.constants import LOOKUP_SEP
-from django.db.models.sql.constants import QUERY_TERMS
+# from django.db.models.sql.constants import QUERY_TERMS
 from django.template import loader
 from django.utils import six
 from django.utils.encoding import smart_str
@@ -45,8 +45,8 @@ class FilterPlugin(BaseAdminPlugin):
 
         # Last term in lookup is a query term (__exact, __startswith etc)
         # This term can be ignored.
-        if len(parts) > 1 and parts[-1] in QUERY_TERMS:
-            parts.pop()
+        # if len(parts) > 1 and parts[-1] in QUERY_TERMS:
+        #     parts.pop()
 
         # Special case -- foo__id__exact and foo__id queries are implied
         # if foo has been specificially included in the lookup list; so
@@ -60,9 +60,9 @@ class FilterPlugin(BaseAdminPlugin):
                 # Lookups on non-existants fields are ok, since they're ignored
                 # later.
                 return True
-            if hasattr(field, 'rel'):
-                model = field.rel.to
-                rel_name = field.rel.get_related_field().name
+            if hasattr(field, 'remote_field'):
+                model = field.remote_field.to
+                rel_name = field.remote_field.get_related_field().name
             elif is_related_field(field):
                 model = field.model
                 rel_name = model._meta.pk.name

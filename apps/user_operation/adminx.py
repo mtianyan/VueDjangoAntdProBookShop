@@ -1,8 +1,30 @@
-# encoding: utf-8
+#!/usr/bin/ python
+# -*- coding: utf-8 -*-
 __author__ = 'mtianyan'
-__date__ = '2018/2/14 0014 01:16'
-
-
+__date__ = '2018-11-26 19:11'
+"""
+            　┏┓　　　┏┓+ +
+  　　　　　　　┏┛┻━━━┛┻┓ + +
+  　　　　　　　┃　　　　　　　┃ 　
+  　　　　　　　┃　　　━　　　┃ ++ + + +
+  　　　　　　 ████━████ ┃+
+  　　　　　　　┃　　　　　　　┃ +
+  　　　　　　　┃　　　┻　　　┃
+  　　　　　　　┃　　　　　　　┃ + +
+  　　　　　　　┗━┓　　　┏━┛
+  　　　　　　　　　┃　　　┃　　　　　　　　　　　
+  　　　　　　　　　┃　　　┃ + + + +
+  　　　　　　　　　┃　　　┃　　　　Code is far away from bug with the animal protecting　　　　　　　
+  　　　　　　　　　┃　　　┃ + 　　　　神兽保佑,代码无bug　　
+  　　　　　　　　　┃　　　┃
+  　　　　　　　　　┃　　　┃　　+　　　　　　　　　
+  　　　　　　　　　┃　 　　┗━━━┓ + +
+  　　　　　　　　　┃ 　　　　　　　┣┓
+  　　　　　　　　　┃ 　　　　　　　┏┛
+  　　　　　　　　　┗┓┓┏━┳┓┏┛ + + + +
+  　　　　　　　　　　┃┫┫　┃┫┫
+  　　　　　　　　　　┗┻┛　┗┻┛+ + + +
+"""
 import xadmin
 from .models import UserFav, UserLeavingMessage, UserAddress
 
@@ -17,6 +39,7 @@ class UserLeavingMessageAdmin(object):
 
 class UserAddressAdmin(object):
     list_display = ["signer_name", "signer_mobile", "district", "address"]
+
 
 xadmin.site.register(UserFav, UserFavAdmin)
 xadmin.site.register(UserAddress, UserAddressAdmin)

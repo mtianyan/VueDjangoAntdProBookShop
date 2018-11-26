@@ -26,7 +26,7 @@ msgstr "管理对象"
 
 #: .\apps.py:11
 msgid "Administration"
-msgstr "管理"
+msgstr "日志管理"
 
 #: .\filters.py:169 .\filters.py:207 .\filters.py:427 .\filters.py:513
 #: .\filters.py:551

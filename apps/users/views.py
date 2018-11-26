@@ -9,7 +9,7 @@ from django.contrib.auth import get_user_model
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework_jwt.serializers import jwt_payload_handler, jwt_encode_handler
 
-from VueDjangoFrameWorkShop.settings import APIKEY
+from VueDjangoRestFrameworkBookStore.settings import APIKEY
 from rest_framework.response import Response
 from rest_framework import mixins, permissions, authentication
 from rest_framework import viewsets, status
@@ -20,6 +20,8 @@ from utils.yunpian import YunPian
 User = get_user_model()
 # 发送验证码是创建model中一条记录的操作
 from rest_framework.mixins import CreateModelMixin
+
+
 # Create your views here.
 
 
@@ -27,6 +29,7 @@ class CustomBackend(ModelBackend):
     """
     自定义用户验证规则
     """
+
     def authenticate(self, username=None, password=None, **kwargs):
         try:
             # 不希望用户存在两个，get只能有一个。两个是get失败的一种原因
@@ -46,6 +49,7 @@ class SmsCodeViewset(CreateModelMixin, viewsets.GenericViewSet):
     """
     发送短信验证码
     """
+    authentication_classes = ()
     serializer_class = SmsSerializer
 
     def generate_code(self):
@@ -87,9 +91,11 @@ class UserViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveMode
     """
     用户
     """
+    authentication_classes = ()
     serializer_class = UserRegSerializer
     queryset = User.objects.all()
-    authentication_classes = (JSONWebTokenAuthentication, authentication.SessionAuthentication)
+
+    # authentication_classes = (JSONWebTokenAuthentication, authentication.SessionAuthentication)
 
     def get_serializer_class(self):
         if self.action == "retrieve":
@@ -102,14 +108,15 @@ class UserViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveMode
     # permission_classes = (permissions.IsAuthenticated, )
     def get_permissions(self):
         if self.action == "retrieve":
-            return [permissions.IsAuthenticated()]
+            # return [permissions.IsAuthenticated()]
+            return []
         elif self.action == "create":
             return []
 
         return []
 
-
     def create(self, request, *args, **kwargs):
+        authentication_classes = ()
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = self.perform_create(serializer)
@@ -128,3 +135,9 @@ class UserViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveMode
 
     def perform_create(self, serializer):
         return serializer.save()
+
+
+from django.views.generic.base import RedirectView
+
+favicon_view = RedirectView.as_view(
+    url='http://vueshopstatic.mtianyan.cn/daishu/favicon.ico', permanent=True)

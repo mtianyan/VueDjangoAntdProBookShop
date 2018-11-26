@@ -105,7 +105,7 @@ class OrderViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, mixins.Crea
 
 from rest_framework.views import APIView
 from utils.alipay import AliPay
-from VueDjangoFrameWorkShop.settings import ali_pub_key_path, private_key_path
+from VueDjangoRestFrameworkBookStore.settings import ali_pub_key_path, private_key_path
 from rest_framework.response import Response
 
 
@@ -123,12 +123,12 @@ class AlipayView(APIView):
 
         # 3. 生成ALipay对象
         alipay = AliPay(
-            appid="2016091200490210",
-            app_notify_url="http://115.159.122.64:8000/alipay/return/",
+            appid="2018060160303504",
+            app_notify_url="http://vueshop.mtianyan.cn/alipay/return/",
             app_private_key_path=private_key_path,
             alipay_public_key_path=ali_pub_key_path,  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
-            debug=True,  # 默认False,
-            return_url="http://115.159.122.64:8000/alipay/return/"
+            # debug=True,  # 默认False,
+            return_url="http://vueshop.mtianyan.cn/alipay/return/"
         )
 
         verify_re = alipay.verify(processed_dict, sign)
@@ -164,12 +164,12 @@ class AlipayView(APIView):
 
         # 2. 生成一个Alipay对象
         alipay = AliPay(
-            appid="2016091200490210",
-            app_notify_url="http://115.159.122.64:8000/alipay/return/",
+            appid="2018060160303504",
+            app_notify_url="http://vueshop.mtianyan.cn/alipay/return/",
             app_private_key_path=private_key_path,
             alipay_public_key_path=ali_pub_key_path,  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
-            debug=True,  # 默认False,
-            return_url="http://115.159.122.64:8000/alipay/return/"
+            # debug=True,  # 默认False,
+            return_url="http://vueshop.mtianyan.cn/alipay/return/"
         )
 
         # 3. 进行验签，确保这是支付宝给我们的

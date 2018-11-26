@@ -1,4 +1,3 @@
-
 PLUGINS = (
     'actions',
     'filters',

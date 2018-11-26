@@ -12,4 +12,4 @@ class XAdminConfig(AppConfig):
 
     def ready(self):
         self.module.autodiscover()
-        setattr(xadmin,'site',xadmin.site)
+        setattr(xadmin, 'site', xadmin.site)

@@ -1,7 +1,30 @@
-# encoding: utf-8
+#!/usr/bin/ python
+# -*- coding: utf-8 -*-
 __author__ = 'mtianyan'
-__date__ = '2018/2/13 0013 20:26'
-
+__date__ = '2018-11-26 19:14'
+"""
+            　┏┓　　　┏┓+ +
+  　　　　　　　┏┛┻━━━┛┻┓ + +
+  　　　　　　　┃　　　　　　　┃ 　
+  　　　　　　　┃　　　━　　　┃ ++ + + +
+  　　　　　　 ████━████ ┃+
+  　　　　　　　┃　　　　　　　┃ +
+  　　　　　　　┃　　　┻　　　┃
+  　　　　　　　┃　　　　　　　┃ + +
+  　　　　　　　┗━┓　　　┏━┛
+  　　　　　　　　　┃　　　┃　　　　　　　　　　　
+  　　　　　　　　　┃　　　┃ + + + +
+  　　　　　　　　　┃　　　┃　　　　Code is far away from bug with the animal protecting　　　　　　　
+  　　　　　　　　　┃　　　┃ + 　　　　神兽保佑,代码无bug　　
+  　　　　　　　　　┃　　　┃
+  　　　　　　　　　┃　　　┃　　+　　　　　　　　　
+  　　　　　　　　　┃　 　　┗━━━┓ + +
+  　　　　　　　　　┃ 　　　　　　　┣┓
+  　　　　　　　　　┃ 　　　　　　　┏┛
+  　　　　　　　　　┗┓┓┏━┳┓┏┛ + + + +
+  　　　　　　　　　　┃┫┫　┃┫┫
+  　　　　　　　　　　┗┻┛　┗┻┛+ + + +
+"""
 import xadmin
 from .models import Goods, GoodsCategory, GoodsImage, GoodsCategoryBrand, Banner, HotSearchWords
 from .models import IndexAd
@@ -59,5 +82,3 @@ xadmin.site.register(Banner, BannerGoodsAdmin)
 xadmin.site.register(GoodsCategoryBrand, GoodsBrandAdmin)
 
 xadmin.site.register(HotSearchWords, HotSearchAdmin)
-xadmin.site.register(IndexAd, IndexAdAdmin)
-

@@ -1,2 +1,0 @@
--r requirements-base.txt
-unittest2py3k==0.5.1

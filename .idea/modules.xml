@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/VueDjangoFrameWorkShop.iml" filepath="$PROJECT_DIR$/.idea/VueDjangoFrameWorkShop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/VueDjangoRestFrameworkBookStore.iml" filepath="$PROJECT_DIR$/.idea/VueDjangoRestFrameworkBookStore.iml" />
     </modules>
   </component>
 </project>
