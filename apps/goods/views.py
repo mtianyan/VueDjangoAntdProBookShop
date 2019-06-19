@@ -26,6 +26,7 @@ from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 class GoodsPagination(PageNumberPagination):
     page_size = 12
     # 向后台要多少条
+
     page_size_query_param = 'page_size'
     # 定制多少页的参数
     page_query_param = "page"

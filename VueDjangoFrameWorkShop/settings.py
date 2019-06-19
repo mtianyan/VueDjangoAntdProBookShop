@@ -229,11 +229,17 @@ SOCIAL_AUTH_WEIXIN_SECRET = 'bazqux'
 import os
 import raven
 
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+    'http://localhost:8000',
+    'http://localhost:8080',
+]
+
 RAVEN_CONFIG = {
     'dsn': 'https://<key>:<secret>@sentry.io/<project>',
 }
 
-REMOTE_DEBUG = True
+REMOTE_DEBUG = False
 PROJECT_ROOT = os.path.join(BASE_DIR, 'VueDjangoFrameWorkShop')
 if DEBUG and REMOTE_DEBUG:
     try:

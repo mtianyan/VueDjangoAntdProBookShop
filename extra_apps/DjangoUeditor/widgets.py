@@ -164,7 +164,7 @@ class UEditorWidget(forms.Textarea):
         except:
             pass
 
-    def render(self, name, value, attrs=None):
+    def render(self, name, value, attrs=None, renderer=None):
         if value is None:
             value = ''
         # 传入模板的参数
