@@ -17,8 +17,8 @@ from past.builtins import execfile
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # sys.path.insert(0,BASE_DIR)
-sys.path.insert(0,os.path.join(BASE_DIR, 'apps'))
-sys.path.insert(0,os.path.join(BASE_DIR, 'extra_apps'))
+sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
+sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -106,7 +106,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'VueDjangoFrameWorkShop.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
@@ -120,7 +119,6 @@ DATABASES = {
         "OPTIONS": {"init_command": "SET default_storage_engine=INNODB;"}
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -139,7 +137,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
@@ -208,6 +205,7 @@ CACHES = {
         "LOCATION": "redis://127.0.0.1:6379/",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "PASSWORD": "mtianyanRedisRoot"
         }
     }
 }
@@ -238,7 +236,7 @@ CORS_ORIGIN_WHITELIST = [
 RAVEN_CONFIG = {
     'dsn': 'https://<key>:<secret>@sentry.io/<project>',
 }
-
+X_FRAME_OPTIONS = 'sameorigin'
 REMOTE_DEBUG = False
 PROJECT_ROOT = os.path.join(BASE_DIR, 'VueDjangoFrameWorkShop')
 if DEBUG and REMOTE_DEBUG:

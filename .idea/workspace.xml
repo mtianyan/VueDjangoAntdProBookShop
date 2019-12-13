@@ -1,501 +1,407 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe981b6f-86fe-436c-a1a4-53d5f0fd0c95" name="Default" comment="">
+    <list default="true" id="9dfc3b1d-c5dc-4265-8b6d-da80f8a14988" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/cache.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/client/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/client/default.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/client/herd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/client/sharded.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/compressors/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/compressors/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/compressors/identity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/compressors/lz4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/compressors/lzma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/compressors/zlib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/hash_ring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/pool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/serializers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/serializers/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/serializers/json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/serializers/msgpack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/serializers/pickle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/django_redis/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/bulk_operations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/bulk_operations/mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/cache/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/cache/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/cache/mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/etag/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/etag/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/etag/mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/key_constructor/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/key_constructor/bits.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/key_constructor/constructors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/routers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/rest_framework_extensions/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/VueDjangoFrameWorkShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VueDjangoFrameWorkShop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueDjangoFrameWorkShop/local_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/VueDjangoFrameWorkShop/local_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/DjangoUeditor/widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/widgets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/conf.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/constants.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/fields.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/filters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/filterset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/da/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/da/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/de/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/de/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/el/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/el/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/es_AR/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/es_AR/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/es_ES/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/es_ES/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/fr/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/fr/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/pl/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/pl/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/ru/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/ru/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/zh_CN/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/zh_Hans/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/zh_Hans/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/locale/zh_Hans/LC_MESSAGES/django.po.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/rest_framework/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/rest_framework/backends.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/rest_framework/filters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/rest_framework/filterset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/templates/django_filters/rest_framework/crispy_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/templates/django_filters/rest_framework/form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/templates/django_filters/widgets/multiwidget.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/django_filters/widgets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/DjangoUeditor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/DjangoUeditor/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authentication.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authtoken/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authtoken/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authtoken/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authtoken/management/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authtoken/management/commands/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authtoken/management/commands/drf_create_token.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authtoken/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authtoken/migrations/0002_auto_20160226_1747.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authtoken/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authtoken/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authtoken/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/authtoken/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/checks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/decorators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/documentation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/fields.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/filters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/generics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ach/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ach/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ar/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ar/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/be/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/be/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ca/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ca/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ca_ES/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ca_ES/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/cs/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/cs/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/da/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/da/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/de/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/de/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/el/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/el/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/el_GR/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/el_GR/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/en/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/en/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/en_AU/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/en_AU/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/en_CA/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/en_CA/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/en_US/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/en_US/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/es/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/es/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/et/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/et/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/fa/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/fa/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/fa_IR/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/fa_IR/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/fi/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/fi/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/fr/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/fr/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/fr_CA/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/fr_CA/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/gl/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/gl/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/gl_ES/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/gl_ES/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/he_IL/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/he_IL/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/hu/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/hu/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/id/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/id/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/it/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/it/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ja/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ja/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ko_KR/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ko_KR/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/lv/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/lv/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/mk/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/mk/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/nb/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/nb/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/nl/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/nl/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/nn/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/nn/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/no/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/no/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/pl/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/pl/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/pt/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/pt/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/pt_BR/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/pt_BR/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/pt_PT/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/pt_PT/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ro/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ro/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ru/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/ru/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/sk/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/sk/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/sl/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/sl/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/sv/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/sv/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/tr/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/tr/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/tr_TR/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/tr_TR/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/uk/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/uk/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/vi/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/vi/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/zh_CN/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/zh_CN/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/zh_Hans/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/zh_Hans/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/zh_Hant/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/zh_Hant/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/zh_TW/LC_MESSAGES/django.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/locale/zh_TW/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/metadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/mixins.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/negotiation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/pagination.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/parsers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/permissions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/relations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/renderers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/response.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/reverse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/routers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/schemas/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/schemas/generators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/schemas/inspectors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/schemas/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/schemas/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/css/bootstrap-tweaks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/css/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/css/font-awesome-4.0.3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/css/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/docs/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/docs/css/highlight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/docs/css/jquery.json-view.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/docs/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/docs/img/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/docs/js/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/docs/js/highlight.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/docs/js/jquery.json-view.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/img/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/img/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/img/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/js/ajax-form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/js/coreapi-0.1.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/js/csrf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/js/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/static/rest_framework/js/prettify-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/admin/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/admin/dict_value.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/admin/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/admin/list_value.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/admin/simple_list_value.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/auth/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/auth/session.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/auth/token.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/document.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/interact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/langs/javascript-intro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/langs/javascript.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/langs/python-intro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/langs/python.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/langs/shell-intro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/langs/shell.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/docs/sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/filters/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/filters/ordering.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/filters/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/horizontal/checkbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/horizontal/checkbox_multiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/horizontal/dict_field.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/horizontal/fieldset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/horizontal/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/horizontal/input.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/horizontal/list_field.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/horizontal/list_fieldset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/horizontal/radio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/horizontal/select.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/horizontal/select_multiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/horizontal/textarea.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/inline/checkbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/inline/checkbox_multiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/inline/dict_field.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/inline/fieldset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/inline/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/inline/input.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/inline/list_field.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/inline/list_fieldset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/inline/radio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/inline/select.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/inline/select_multiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/inline/textarea.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/login_base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/pagination/numbers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/pagination/previous_and_next.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/raw_data_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/schema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/vertical/checkbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/vertical/checkbox_multiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/vertical/dict_field.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/vertical/fieldset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/vertical/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/vertical/input.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/vertical/list_field.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/vertical/list_fieldset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/vertical/radio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/vertical/select.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/vertical/select_multiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/vertical/textarea.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templatetags/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/templatetags/rest_framework.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/throttling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/urlpatterns.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/breadcrumbs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/encoders.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/field_mapping.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/formatting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/html.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/humanize_datetime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/mediatypes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/model_meta.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/representation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/serializer_helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/utils/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/validators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/versioning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/rest_framework/viewsets.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/details.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/details.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/editable.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/editable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/batch.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/batch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/export.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/export.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/images.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/images.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/inline.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/inline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/passwords.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/passwords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/quickfilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/quickfilter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/relate.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/relate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/relfield.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/relfield.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/themes.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/themes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/ueditor.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/ueditor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/wizard.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/wizard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/plugins/xversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/xversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/sites.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/sites.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.form.css" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.form.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.main.css" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.selection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/comm.top.setlang.html" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/comm.top.setlang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.formset.js" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.formset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.responsive.js" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.responsive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.el.js" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_history.html" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_history.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/templatetags/xadmin_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/templatetags/xadmin_tags.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/views/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/views/dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/dashboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/views/delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/views/detail.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/detail.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/views/edit.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/edit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/views/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/form.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/views/list.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/views/website.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/website.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra_apps/xadmin/widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/extra_apps/xadmin/widgets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/req_shop.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.entry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_shop.sql" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/VueDjangoFrameWorkShop$yunpian.coverage" NAME="yunpian Coverage Results" MODIFIED="1520475876058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
-    <SUITE FILE_PATH="coverage/VueDjangoFrameWorkShop$alipay.coverage" NAME="alipay Coverage Results" MODIFIED="1521002870402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
-    <SUITE FILE_PATH="coverage/VueDjangoFrameWorkShop$weibo_login.coverage" NAME="weibo_login Coverage Results" MODIFIED="1521098039998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
-    <SUITE FILE_PATH="coverage/VueDjangoFrameWorkShop$sentry_test.coverage" NAME="sentry_test Coverage Results" MODIFIED="1521123649332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_sentry" />
-  </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="VueDjangoFrameWorkShop" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/api.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="77" lean-forward="true" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/index.entry.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret column="5383" selection-start-column="5383" selection-end-column="5383" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#405#411#0" expanded="true" />
-                <element signature="e#412#418#0" expanded="true" />
-                <element signature="e#724#730#0" expanded="true" />
-                <element signature="e#730#736#0" expanded="true" />
-                <element signature="e#736#742#0" expanded="true" />
-                <element signature="e#742#748#0" expanded="true" />
-                <element signature="e#748#754#0" expanded="true" />
-                <element signature="e#2044#2090#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>optional</find>
-      <find>options</find>
-      <find>Field filters</find>
-      <find>base</find>
-      <find>get_rendered_html_form</find>
-      <find>invalid name</find>
-      <find>TOken</find>
-      <find>keyword</find>
-      <find>OPTIONS</find>
-      <find>trans</find>
-      <find>ready</find>
-      <find>UserCreationForm</find>
-      <find>goods_id</find>
-      <find>goods</find>
-      <find>get_per</find>
-      <find>dist</find>
-      <find>area</find>
-      <find>_data</find>
-      <find>order_sn</find>
-      <find>update</find>
-      <find>appid</find>
-      <find>redirect</find>
-      <find>static</find>
-      <find>xadmin</find>
-      <find>ad</find>
-      <find>signa</find>
-      <find>cache</find>
-      <find>auth</find>
-      <find>login</find>
-      <find>render</find>
-    </findStrings>
-    <dirStrings>
-      <dir>D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop</dir>
-      <dir>D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\extra_apps\xadmin</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/extra_apps/rest_framework/documentation.py" />
-        <option value="$PROJECT_DIR$/extra_apps/django_filters/templates/django_filters/rest_framework/form.html" />
-        <option value="$PROJECT_DIR$/extra_apps/django_filters/templates/django_filters/rest_framework/crispy_form.html" />
-        <option value="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/filters/search.html" />
-        <option value="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/filters/ordering.html" />
-        <option value="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/filters/base.html" />
-        <option value="$PROJECT_DIR$/extra_apps/rest_framework/renderers.py" />
-        <option value="$PROJECT_DIR$/extra_apps/rest_framework/templates/rest_framework/base.html" />
-        <option value="$PROJECT_DIR$/extra_apps/rest_framework/locale/zh_Hans/LC_MESSAGES/django.po" />
-        <option value="$PROJECT_DIR$/extra_apps/rest_framework/urls.py" />
-        <option value="$PROJECT_DIR$/apps/utils/yunpian.py" />
-        <option value="$PROJECT_DIR$/extra_apps/django_filters/filters.py" />
-        <option value="$PROJECT_DIR$/apps/users/apps.py" />
-        <option value="$PROJECT_DIR$/extra_apps/rest_framework/views.py" />
-        <option value="$PROJECT_DIR$/apps/utils/permissions.py" />
-        <option value="$PROJECT_DIR$/apps/users/models.py" />
-        <option value="$PROJECT_DIR$/apps/users/views.py" />
-        <option value="$PROJECT_DIR$/apps/user_operation/models.py" />
-        <option value="$PROJECT_DIR$/apps/user_operation/adminx.py" />
-        <option value="$PROJECT_DIR$/apps/user_operation/serializers.py" />
-        <option value="$PROJECT_DIR$/apps/trade/models.py" />
-        <option value="$PROJECT_DIR$/apps/trade/keys/pub_2048.txt" />
-        <option value="$PROJECT_DIR$/apps/trade/keys/private_2048.txt" />
-        <option value="$PROJECT_DIR$/apps/trade/keys/alipay_key_2048.txt" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/apps/trade/serializers.py" />
-        <option value="$PROJECT_DIR$/apps/utils/alipay.py" />
-        <option value="$PROJECT_DIR$/apps/goods/filters.py" />
-        <option value="$PROJECT_DIR$/extra_apps/rest_framework/mixins.py" />
-        <option value="$PROJECT_DIR$/apps/goods/apps.py" />
-        <option value="$PROJECT_DIR$/apps/user_operation/apps.py" />
-        <option value="$PROJECT_DIR$/apps/user_operation/views.py" />
-        <option value="$PROJECT_DIR$/apps/user_operation/signals.py" />
-        <option value="$PROJECT_DIR$/apps/trade/views.py" />
-        <option value="$PROJECT_DIR$/apps/utils/weibo_login.py" />
-        <option value="$PROJECT_DIR$/apps/goods/serializers.py" />
-        <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/extra_apps/social_core/actions.py" />
-        <option value="$PROJECT_DIR$/test_sentry/sentry_test.py" />
-        <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/dev_settings.py" />
-        <option value="$PROJECT_DIR$/Readme.md" />
-        <option value="$PROJECT_DIR$/README.MD" />
-        <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/local_settings.py" />
-        <option value="$PROJECT_DIR$/extra_apps/xadmin/views/website.py" />
-        <option value="$PROJECT_DIR$/apps/goods/views.py" />
-        <option value="$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py" />
-        <option value="$PROJECT_DIR$/apps/users/serializers.py" />
-        <option value="$PROJECT_DIR$/apps/users/signals.py" />
-        <option value="$PROJECT_DIR$/extra_apps/DjangoUeditor/widgets.py" />
-        <option value="$PROJECT_DIR$/static/index.entry.js" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="963" />
-    <option name="y" value="23" />
-    <option name="width" value="957" />
-    <option name="height" value="970" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="VueDjangoFrameWorkShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VueDjangoFrameWorkShop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VueDjangoFrameWorkShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VueDjangoFrameWorkShop" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VueDjangoFrameWorkShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VueDjangoFrameWorkShop" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="D:" type="cbb8eebc:String" user="D:" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="D:" type="cbb8eebc:String" user="D:" />
-              <item name="CodeSpace" type="cbb8eebc:String" user="CodeSpace" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="D:" type="cbb8eebc:String" user="D:" />
-              <item name="CodeSpace" type="cbb8eebc:String" user="CodeSpace" />
-              <item name="PythonEnvs" type="cbb8eebc:String" user="PythonEnvs" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="D:" type="cbb8eebc:String" user="D:" />
-              <item name="CodeSpace" type="cbb8eebc:String" user="CodeSpace" />
-              <item name="PythonEnvs" type="cbb8eebc:String" user="PythonEnvs" />
-              <item name="mxshop36" type="cbb8eebc:String" user="mxshop36" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="D:" type="cbb8eebc:String" user="D:" />
-              <item name="CodeSpace" type="cbb8eebc:String" user="CodeSpace" />
-              <item name="PythonEnvs" type="cbb8eebc:String" user="PythonEnvs" />
-              <item name="mxshop36" type="cbb8eebc:String" user="mxshop36" />
-              <item name="Lib" type="cbb8eebc:String" user="Lib" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="D:" type="cbb8eebc:String" user="D:" />
-              <item name="CodeSpace" type="cbb8eebc:String" user="CodeSpace" />
-              <item name="PythonEnvs" type="cbb8eebc:String" user="PythonEnvs" />
-              <item name="mxshop36" type="cbb8eebc:String" user="mxshop36" />
-              <item name="Lib" type="cbb8eebc:String" user="Lib" />
-              <item name="site-packages" type="cbb8eebc:String" user="site-packages" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1UvI8UxNntt5ORX2oujfoNKLr4l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/extra_apps" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="restartRequiresConfirmation" value="false" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/extra_apps" />
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop" />
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\static" />
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\extra_apps" />
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\apps\goods" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\templates" />
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\apps\user_operation" />
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\apps\goods" />
-      <recent name="D:\CodeSpace\PythonProject\VueDjangoFrameWorkShop\apps" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Django server.VueDjangoFrameWorkShop_local">
-    <configuration name="alipay" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VueDjangoFrameWorkShop" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/alipay.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="import_goods_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VueDjangoFrameWorkShop" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db_tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_tools/import_goods_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sentry_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VueDjangoFrameWorkShop" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_sentry" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_sentry/sentry_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="weibo_login" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VueDjangoFrameWorkShop" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/weibo_login.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="yunpian" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="VueDjangoFrameWorkShop" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/yunpian.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="VueDjangoFrameWorkShop_local" type="Python.DjangoServer" factoryName="Django server">
+  <component name="RunManager">
+    <configuration name="VueDjangoFrameWorkShop" type="Python.DjangoServer" factoryName="Django server">
       <module name="VueDjangoFrameWorkShop" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -505,22 +411,12 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
-      </EXTENSION>
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
-      <option name="host" value="127.0.0.1" />
+      <option name="host" value="" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -529,555 +425,80 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Django server.VueDjangoFrameWorkShop_local" />
-      <item itemvalue="Python.import_goods_data" />
-      <item itemvalue="Python.yunpian" />
-      <item itemvalue="Python.alipay" />
-      <item itemvalue="Python.weibo_login" />
-      <item itemvalue="Python.sentry_test" />
-    </list>
-    <recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <item itemvalue="Python.sentry_test" />
-        <item itemvalue="Python.weibo_login" />
-        <item itemvalue="Python.alipay" />
-        <item itemvalue="Python.yunpian" />
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
-    </recent_temporary>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fe981b6f-86fe-436c-a1a4-53d5f0fd0c95" name="Default" comment="" />
-      <created>1518297632874</created>
+      <changelist id="9dfc3b1d-c5dc-4265-8b6d-da80f8a14988" name="Default Changelist" comment="" />
+      <created>1576230482820</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1518297632874</updated>
-      <workItem from="1520026599505" duration="2965000" />
-      <workItem from="1520097934571" duration="21000" />
-      <workItem from="1558215225905" duration="24000" />
-      <workItem from="1560910881077" duration="1205000" />
-      <workItem from="1560930376384" duration="20000" />
-      <workItem from="1560933461568" duration="1148000" />
+      <updated>1576230482820</updated>
+      <workItem from="1576230484026" duration="40000" />
+      <workItem from="1576230526184" duration="1331000" />
+      <workItem from="1576245744949" duration="510000" />
+      <workItem from="1576246524633" duration="437000" />
+      <workItem from="1576247103094" duration="892000" />
     </task>
-    <task id="LOCAL-00001" summary="截止5-8已完成。">
-      <created>1519160514318</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1519160514318</updated>
-    </task>
-    <task id="LOCAL-00002" summary="完成了djangofilter以及restframework的源码安装以及汉化。对于搜索排序，过滤进行了学习。完成了类别数据接口，完成vue展示商品分类数据，完成商品列表页，完成商品搜素功能。">
-      <created>1520147384887</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1520147384887</updated>
-    </task>
-    <task id="LOCAL-00003" summary="完成了用户登录的drf再到token auth版本和viewset中配置认证类，jWT的原理和jwt方式完成用户登录接口，vue和jwt接口的调试">
-      <created>1520183206421</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1520183206421</updated>
-    </task>
-    <task id="LOCAL-00004" summary="完成手机验证码的接口实现，采用云片网手机验证码">
-      <created>1520476260449</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1520476260449</updated>
-    </task>
-    <task id="LOCAL-00005" summary="完成注册的url配置，viewset的书写，modelSerializers的字段不一致的自定义处理">
-      <created>1520481176417</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1520481176417</updated>
-    </task>
-    <task id="LOCAL-00006" summary="完成了注册时密码的加密，以及运用信号量post_save进行密码加密。待解决问题，xadmin加密两次。">
-      <created>1520560298379</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1520560298379</updated>
-    </task>
-    <task id="LOCAL-00007" summary="第七章完结撒花庆祝，完成了注册功能。">
-      <created>1520591555778</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1520591555778</updated>
-    </task>
-    <task id="LOCAL-00008" summary="第八章完结，完成了商品详情页功能，实现了热卖商品接口，用户收藏接口，drf权限验证。">
-      <created>1520680519523</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1520680519523</updated>
-    </task>
-    <task id="LOCAL-00009" summary="文档的使用">
-      <created>1520682385941</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1520682385941</updated>
-    </task>
-    <task id="LOCAL-00010" summary="动态设置Serializer和permission。用户个人信息，收藏留言，收货地址。">
-      <created>1520755092602</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1520755092603</updated>
-    </task>
-    <task id="LOCAL-00011" summary="完成购物车接口以及与vue的联调。">
-      <created>1520760705204</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1520760705204</updated>
-    </task>
-    <task id="LOCAL-00012" summary="完成订单接口以及订单详情商品数据的显示。">
-      <created>1520771495397</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1520771495397</updated>
-    </task>
-    <task id="LOCAL-00013" summary="进度: notifyurl的配置未完成。">
-      <created>1520957338549</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1520957338549</updated>
-    </task>
-    <task id="LOCAL-00014" summary="完成支付宝对接，vue联调。第十章完结，撒花">
-      <created>1521007636604</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1521007636604</updated>
-    </task>
-    <task id="LOCAL-00015" summary="修复xadmin因为debug不显示图片的bug。。。！！！自己的devsetting文件中debug=False">
-      <created>1521015557286</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1521015557286</updated>
-    </task>
-    <task id="LOCAL-00016" summary="完成 首页、商品数量、缓存、限速功能开发">
-      <created>1521031641057</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1521031641057</updated>
-    </task>
-    <task id="LOCAL-00017" summary="完成第三方登录的开发。修复了vue联调中无法显示用户名的bug">
-      <created>1521120695536</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1521120695536</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5383000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49053627" visible="true" weight="0.12832801" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.4273183" />
-      <window_info id="Favorites" order="2" sideWeight="0.5094637" side_tool="true" weight="0.1566618" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298153" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65051395" weight="0.44093567" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4904552" weight="0.4242902" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.328" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49122807" weight="0.32893" />
-      <window_info anchor="bottom" id="manage.py@VueDjangoFrameWorkShop" order="9" visible="true" weight="0.2745694" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.583878" weight="0.32046783" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.416122" side_tool="true" weight="0.32046783" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32893" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.4904552" weight="0.3328" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49224806" weight="0.34051725" />
-      <window_info id="Structure" order="1" weight="0.4273183" />
-      <window_info id="Favorites" order="2" sideWeight="0.50775194" side_tool="true" weight="0.29699248" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298153" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49498746" visible="true" weight="0.31836197" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3989432" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50877196" side_tool="true" weight="0.32893" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49122807" weight="0.32893" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4924812" weight="0.32453826" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="manage.py@VueDjangoFrameWorkShop" order="12" weight="0.32893" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="截止5-8已完成。" />
-    <MESSAGE value="完成了djangofilter以及restframework的源码安装以及汉化。对于搜索排序，过滤进行了学习。完成了类别数据接口，完成vue展示商品分类数据，完成商品列表页，完成商品搜素功能。" />
-    <MESSAGE value="完成了用户登录的drf再到token auth版本和viewset中配置认证类，jWT的原理和jwt方式完成用户登录接口，vue和jwt接口的调试" />
-    <MESSAGE value="完成手机验证码的接口实现，采用云片网手机验证码" />
-    <MESSAGE value="完成注册的url配置，viewset的书写，modelSerializers的字段不一致的自定义处理" />
-    <MESSAGE value="完成了注册时密码的加密，以及运用信号量post_save进行密码加密。待解决问题，xadmin加密两次。" />
-    <MESSAGE value="第七章完结撒花庆祝，完成了注册功能。" />
-    <MESSAGE value="第八章完结，完成了商品详情页功能，实现了热卖商品接口，用户收藏接口，drf权限验证。" />
-    <MESSAGE value="文档的使用" />
-    <MESSAGE value="动态设置Serializer和permission。用户个人信息，收藏留言，收货地址。" />
-    <MESSAGE value="完成购物车接口以及与vue的联调。" />
-    <MESSAGE value="完成订单接口以及订单详情商品数据的显示。" />
-    <MESSAGE value="进度: notifyurl的配置未完成。" />
-    <MESSAGE value="完成支付宝对接，vue联调。第十章完结，撒花" />
-    <MESSAGE value="修复xadmin因为debug不显示图片的bug。。。！！！自己的devsetting文件中debug=False" />
-    <MESSAGE value="完成 首页、商品数量、缓存、限速功能开发" />
-    <MESSAGE value="完成第三方登录的开发。修复了vue联调中无法显示用户名的bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/user_operation/adminx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user_operation/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/rest_framework/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14896">
-          <caret line="841" column="24" selection-start-line="841" selection-start-column="24" selection-end-line="841" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/trade/keys/pub_2048.txt" />
-    <entry file="file://$PROJECT_DIR$/apps/trade/keys/alipay_key_2048.txt" />
-    <entry file="file://$PROJECT_DIR$/apps/trade/keys/private_2048.txt" />
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-1149420728/-2042159081/tokenize.py" />
-    <entry file="file://$PROJECT_DIR$/apps/trade/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-1149420728/-673584965/django/conf/global_settings.py" />
-    <entry file="file://$PROJECT_DIR$/apps/trade/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/rest_framework/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="473" selection-start-line="473" selection-end-line="473" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/utils/alipay.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="112" column="23" selection-start-line="112" selection-start-column="23" selection-end-line="112" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-1149420728/-673584965/django/shortcuts.py" />
-    <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="133" column="22" lean-forward="true" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/filters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/adminx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/rest_framework/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="24" selection-start-line="24" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user_operation/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user_operation/signals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="21" selection-start-line="21" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/trade/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="191" column="29" selection-start-line="191" selection-start-column="29" selection-end-line="191" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../PythonEnvs/mxshop36/Lib/site-packages/rest_framework_extensions/cache/mixins.py" />
-    <entry file="file://$PROJECT_DIR$/apps/user_operation/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../PythonEnvs/mxshop36/Lib/site-packages/social_core/backends/weibo.py" />
-    <entry file="file://$PROJECT_DIR$/../../PythonEnvs/mxshop36/Lib/site-packages/social_core/backends/qq.py" />
-    <entry file="file://$PROJECT_DIR$/../../PythonEnvs/mxshop36/Lib/site-packages/social_core/backends/weixin.py" />
-    <entry file="file://$PROJECT_DIR$/apps/utils/weibo_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="40" column="33" selection-end-line="40" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../PythonEnvs/mxshop36/Lib/site-packages/social_django/urls.py" />
-    <entry file="file://$PROJECT_DIR$/apps/goods/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="103" column="30" lean-forward="true" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="73" column="71" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/social_core/actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_sentry/sentry_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="6" column="114" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/dev_settings.py" />
-    <entry file="file://$PROJECT_DIR$/README.MD">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="318">
-            <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/django_filters/filters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/views/website.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/plugins/filters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/local_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PyEnvs/VueDjangoFrameWorkShop-WFlNyZXY/lib/python3.7/site-packages/django/contrib/auth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueDjangoFrameWorkShop/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="236" lean-forward="true" selection-start-line="236" selection-end-line="236" />
-          <folding>
-            <element signature="e#322#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="66" selection-start-line="66" selection-end-line="70" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/signals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#76#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/DjangoUeditor/widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="164" column="16" lean-forward="true" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/api.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="77" lean-forward="true" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/index.entry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret column="5383" selection-start-column="5383" selection-end-column="5383" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#405#411#0" expanded="true" />
-            <element signature="e#412#418#0" expanded="true" />
-            <element signature="e#724#730#0" expanded="true" />
-            <element signature="e#730#736#0" expanded="true" />
-            <element signature="e#736#742#0" expanded="true" />
-            <element signature="e#742#748#0" expanded="true" />
-            <element signature="e#748#754#0" expanded="true" />
-            <element signature="e#2044#2090#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="978" y="124" key="#VueDjangoFrameWorkShop" timestamp="1576230494351">
+      <screen x="0" y="23" width="1920" height="978" />
+    </state>
+    <state x="978" y="124" key="#VueDjangoFrameWorkShop/0.23.1920.978@0.23.1920.978" timestamp="1576230494351" />
+    <state x="728" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576230519346">
+      <screen x="0" y="23" width="1920" height="978" />
+    </state>
+    <state x="728" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.978@0.23.1920.978" timestamp="1576230519346" />
+    <state x="1051" y="272" key="FileChooserDialogImpl" timestamp="1576230561748">
+      <screen x="0" y="23" width="1920" height="978" />
+    </state>
+    <state x="1051" y="272" key="FileChooserDialogImpl/0.23.1920.978@0.23.1920.978" timestamp="1576230561748" />
+    <state width="1998" height="341" key="GridCell.Tab.0.bottom" timestamp="1576247885369">
+      <screen x="0" y="23" width="2560" height="1327" />
+    </state>
+    <state width="1271" height="255" key="GridCell.Tab.0.bottom/0.23.1920.978@0.23.1920.978" timestamp="1576230663981" />
+    <state width="1998" height="341" key="GridCell.Tab.0.bottom/0.23.2560.1327@0.23.2560.1327" timestamp="1576247885369" />
+    <state width="1998" height="341" key="GridCell.Tab.0.center" timestamp="1576247885368">
+      <screen x="0" y="23" width="2560" height="1327" />
+    </state>
+    <state width="1271" height="255" key="GridCell.Tab.0.center/0.23.1920.978@0.23.1920.978" timestamp="1576230663980" />
+    <state width="1998" height="341" key="GridCell.Tab.0.center/0.23.2560.1327@0.23.2560.1327" timestamp="1576247885368" />
+    <state width="1998" height="341" key="GridCell.Tab.0.left" timestamp="1576247885367">
+      <screen x="0" y="23" width="2560" height="1327" />
+    </state>
+    <state width="1271" height="255" key="GridCell.Tab.0.left/0.23.1920.978@0.23.1920.978" timestamp="1576230663980" />
+    <state width="1998" height="341" key="GridCell.Tab.0.left/0.23.2560.1327@0.23.2560.1327" timestamp="1576247885367" />
+    <state width="1998" height="341" key="GridCell.Tab.0.right" timestamp="1576247885369">
+      <screen x="0" y="23" width="2560" height="1327" />
+    </state>
+    <state width="1271" height="255" key="GridCell.Tab.0.right/0.23.1920.978@0.23.1920.978" timestamp="1576230663981" />
+    <state width="1998" height="341" key="GridCell.Tab.0.right/0.23.2560.1327@0.23.2560.1327" timestamp="1576247885369" />
+    <state x="772" y="149" key="SettingsEditor" timestamp="1576230564145">
+      <screen x="0" y="23" width="1920" height="978" />
+    </state>
+    <state x="772" y="149" key="SettingsEditor/0.23.1920.978@0.23.1920.978" timestamp="1576230564145" />
+    <state x="1220" y="448" width="782" height="540" key="find.popup" timestamp="1576247347868">
+      <screen x="0" y="23" width="2560" height="1327" />
+    </state>
+    <state x="1220" y="448" width="782" height="540" key="find.popup/0.23.2560.1327@0.23.2560.1327" timestamp="1576247347868" />
   </component>
 </project>

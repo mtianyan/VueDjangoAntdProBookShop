@@ -4,7 +4,6 @@ Created on Mar 26, 2014
 @author: LAB_ADM
 '''
 from future.utils import iteritems
-from django.utils import six
 from django.utils.translation import ugettext_lazy as _
 from xadmin.filters import manager, MultiSelectFieldListFilter
 from xadmin.plugins.filters import *
@@ -152,8 +151,7 @@ class QuickFilterPlugin(BaseAdminPlugin):
         self.has_filters = bool(self.filter_specs)
         self.admin_view.quickfilter['filter_specs'] = self.filter_specs
         obj = filter(lambda f: f.is_used, self.filter_specs)
-        if six.PY3:
-            obj = list(obj)
+        obj = list(obj)
         self.admin_view.quickfilter['used_filter_num'] = len(obj)
 
         if use_distinct:

@@ -2,15 +2,9 @@
 import os
 import json
 import random
-try:
-    # python3
-    import urllib.request as urllib
-    from urllib.request import urljoin as urljoin
-except:
-    # python2
-    import urllib
-    from urllib import basejoin as urljoin
+import urllib.request as urllib
 import datetime
+from urllib.parse import urljoin
 from django.http import HttpResponse
 from . import settings as USettings
 from django.views.decorators.csrf import csrf_exempt
@@ -113,7 +107,7 @@ def get_files(root_path, cur_path, allow_types=[]):
     files = []
     items = os.listdir(cur_path)
     for item in items:
-        item = unicode(item)
+        # item = unicode(item)
         item_fullname = os.path.join(root_path, cur_path, item).replace("\\", "/")
         if os.path.isdir(item_fullname):
             files.extend(get_files(root_path, item_fullname, allow_types))
@@ -221,7 +215,7 @@ def UploadFile(request):
         'state': state,
         'size': upload_file_size
     }
-    return HttpResponse(json.dumps(return_info, ensure_ascii=False), content_type="application/javascript")
+    return HttpResponse(json.dumps(return_info, ensure_ascii=False), content_type="application/json")
 
 
 @csrf_exempt

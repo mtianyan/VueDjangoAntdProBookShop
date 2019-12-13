@@ -5,7 +5,7 @@ from django.db.models.sql.query import LOOKUP_SEP
 from django.db.models.deletion import Collector
 from django.db.models.fields.related import ForeignObjectRel
 from django.forms.forms import pretty_name
-from django.utils import formats, six
+from django.utils import formats
 from django.utils.html import escape
 from django.utils.safestring import mark_safe
 from django.utils.text import capfirst
@@ -20,10 +20,8 @@ from django import VERSION as version
 import datetime
 import decimal
 
-if 'django.contrib.staticfiles' in settings.INSTALLED_APPS:
-    from django.contrib.staticfiles.templatetags.staticfiles import static
-else:
-    from django.templatetags.static import static
+
+from django.templatetags.static import static
 
 try:
     import json
@@ -43,7 +41,7 @@ def xstatic(*tags):
     fs = []
     lang = get_language()
 
-    cls_str = str if six.PY3 else basestring
+    cls_str = str
     for tag in tags:
         try:
             for p in tag.split('.'):
@@ -128,7 +126,7 @@ def quote(s):
     quoting is slightly different so that it doesn't get automatically
     unquoted by the Web browser.
     """
-    cls_str = str if six.PY3 else basestring
+    cls_str = str
     if not isinstance(s, cls_str):
         return s
     res = list(s)
@@ -143,7 +141,7 @@ def unquote(s):
     """
     Undo the effects of quote(). Based heavily on urllib.unquote().
     """
-    cls_str = str if six.PY3 else basestring
+    cls_str = str
     if not isinstance(s, cls_str):
         return s
     mychr = chr
@@ -447,8 +445,8 @@ def get_limit_choices_to_from_path(model, path):
     fields = get_fields_from_path(model, path)
     fields = remove_trailing_data_field(fields)
     limit_choices_to = (
-            fields and hasattr(fields[-1], 'remote_field') and
-            getattr(fields[-1].remote_field, 'limit_choices_to', None))
+        fields and hasattr(fields[-1], 'remote_field') and
+        getattr(fields[-1].remote_field, 'limit_choices_to', None))
     if not limit_choices_to:
         return models.Q()  # empty Q
     elif isinstance(limit_choices_to, models.Q):

@@ -36,7 +36,7 @@ class ChangeFieldWidgetWrapper(forms.Widget):
         media = self.widget.media + vendor('xadmin.plugin.batch.js')
         return media
 
-    def render(self, name, value, attrs=None):
+    def render(self, name, value, attrs=None, renderer=None):
         output = []
         is_required = self.widget.is_required
         output.append(u'<label class="btn btn-info btn-xs">'
@@ -44,7 +44,7 @@ class ChangeFieldWidgetWrapper(forms.Widget):
             (BATCH_CHECKBOX_NAME, name, (is_required and ' checked="checked"' or ''), _('Change this field')))
         output.extend([('<div class="control-wrap" style="margin-top: 10px;%s" id="id_%s_wrap_container">' %
             ((not is_required and 'display: none;' or ''), name)),
-            self.widget.render(name, value, attrs), '</div>'])
+            self.widget.render(name, value, attrs, renderer), '</div>'])
         return mark_safe(u''.join(output))
 
     def build_attrs(self, extra_attrs=None, **kwargs):
