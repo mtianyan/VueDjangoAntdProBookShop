@@ -15,6 +15,8 @@ Including another URLconf
 """
 
 from django.views.static import serve
+
+from replace.views import IndexView
 from rest_framework.documentation import include_docs_urls
 
 import xadmin
@@ -38,48 +40,50 @@ from rest_framework_jwt.views import obtain_jwt_token
 router = DefaultRouter()
 
 # 配置goods的url,这个basename是干啥的
-router.register(r'goods', GoodsListViewSet, basename="goods")
+router.register(r'goods', GoodsListViewSet, base_name="goods")
 
 # 配置Category的url
-router.register(r'categories', CategoryViewset, basename="categories")
+router.register(r'categories', CategoryViewset, base_name="categories")
 
 # 配置codes的url
-router.register(r'code', SmsCodeViewset, basename="code")
+router.register(r'code', SmsCodeViewset, base_name="code")
 
 # 配置users的url
-router.register(r'users', UserViewset, basename="users")
+router.register(r'users', UserViewset, base_name="users")
 
 # 配置用户收藏的url
-router.register(r'userfavs', UserFavViewset, basename="userfavs")
+router.register(r'userfavs', UserFavViewset, base_name="userfavs")
 
 # 配置用户留言的url
-router.register(r'messages', LeavingMessageViewset, basename="messages")
+router.register(r'messages', LeavingMessageViewset, base_name="messages")
 
 # 收货地址
-router.register(r'address', AddressViewset, basename="address")
+router.register(r'address', AddressViewset, base_name="address")
 
 # 购物车
-router.register(r'shopcarts', ShoppingCartViewset, basename="shopcarts")
+router.register(r'shopcarts', ShoppingCartViewset, base_name="shopcarts")
 
 # 订单相关url
-router.register(r'orders', OrderViewset, basename="orders")
+router.register(r'orders', OrderViewset, base_name="orders")
 
 # 首页banner轮播图url
-router.register(r'banners', BannerViewset, basename="banners")
+router.register(r'banners', BannerViewset, base_name="banners")
 
 # 首页系列商品展示url
-router.register(r'indexgoods', IndexCategoryViewset, basename="indexgoods")
+router.register(r'indexgoods', IndexCategoryViewset, base_name="indexgoods")
 
 # 热搜词
-router.register(r'hotsearchs', HotSearchsViewset, basename="hotsearchs")
+router.register(r'hotsearchs', HotSearchsViewset, base_name="hotsearchs")
 
 # from VueDjangoFrameWorkShop.settings import STATIC_ROOT
+from django.views.generic.base import RedirectView
+from users.views import favicon_view
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),
     # 处理图片显示的url,使用Django自带serve,传入参数告诉它去哪个路径找，我们有配置好的路径MEDIAROOT
-    re_path('media/(?P<path>.*)', serve, {"document_root": MEDIA_ROOT }),
+    re_path('media/(?P<path>.*)', serve, {"document_root": MEDIA_ROOT}),
     # 富文本相关url
     path('ueditor/', include('DjangoUeditor.urls')),
 
@@ -104,10 +108,12 @@ urlpatterns = [
     path('alipay/return/', AlipayView.as_view()),
 
     # 首页
-    path('index/', TemplateView.as_view(template_name='index.html'), name='index'),
+    path('index/', IndexView.as_view(), name="index"),
 
     # re_path('static/(?P<path>.*)', serve, {"document_root": STATIC_ROOT}),
 
     # 第三方登录
-    path('', include('social_django.urls', namespace='social'))
+    path('', include('social_django.urls', namespace='social')),
+
+    path('favicon.ico', favicon_view),
 ]

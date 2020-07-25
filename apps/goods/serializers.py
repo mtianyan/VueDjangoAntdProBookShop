@@ -19,6 +19,7 @@ class GoodsImageSerializer(serializers.ModelSerializer):
         model = GoodsImage
         fields = ("image",)
 
+
 class GoodsSerializer(serializers.ModelSerializer):
     category = CategorySerializer()
     images = GoodsImageSerializer(many=True)
@@ -43,6 +44,7 @@ class CategorySerializer2(serializers.ModelSerializer):
     商品二级类别序列化
     """
     sub_cat = CategorySerializer3(many=True)
+
     class Meta:
         model = GoodsCategory
         fields = "__all__"
@@ -53,6 +55,7 @@ class CategorySerializer(serializers.ModelSerializer):
     商品一级类别序列化
     """
     sub_cat = CategorySerializer2(many=True)
+
     class Meta:
         model = GoodsCategory
         fields = "__all__"

@@ -68,7 +68,7 @@ class OrderInfo(models.Model):
     add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")
 
     class Meta:
-        verbose_name = u"订单信息"
+        verbose_name = "订单信息"
         verbose_name_plural = verbose_name
 
     def __str__(self):

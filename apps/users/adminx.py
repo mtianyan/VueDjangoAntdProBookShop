@@ -14,7 +14,7 @@ class BaseSetting(object):
 
 
 class GlobalSettings(object):
-    site_title = "mtianyan生鲜超市"
+    site_title = "袋鼠二手书管理后台"
     site_footer = "vueshop@mtianyan.cn"
     # menu_style = "accordion"
 

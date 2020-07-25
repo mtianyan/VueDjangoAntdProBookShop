@@ -42,6 +42,3 @@ class GoodsListView(View):
         # 注释掉loads，下面语句正常
         # return HttpResponse(json_data, content_type="application/json")
         return JsonResponse(json_data, safe=False)
-
-
-

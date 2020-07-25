@@ -35,6 +35,7 @@ class GoodsBrandAdmin(object):
     list_display = ["category", "image", "name", "desc"]
 
     def get_context(self):
+        """TODO: get_context用法"""
         context = super(GoodsBrandAdmin, self).get_context()
         if 'form' in context:
             context['form'].fields['category'].queryset = GoodsCategory.objects.filter(category_type=1)

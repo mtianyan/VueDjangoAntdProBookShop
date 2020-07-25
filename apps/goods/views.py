@@ -23,10 +23,11 @@ from rest_framework_extensions.cache.mixins import CacheResponseMixin
 from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 
 # 商品列表分页类
+
+
 class GoodsPagination(PageNumberPagination):
     page_size = 12
     # 向后台要多少条
-
     page_size_query_param = 'page_size'
     # 定制多少页的参数
     page_query_param = "page"
@@ -68,8 +69,6 @@ class GoodsListViewSet(CacheResponseMixin, mixins.ListModelMixin, mixins.Retriev
     # 设置我们需要进行过滤的字段
     # filter_fields = ('name', 'shop_price')
 
-
-
     # def get_queryset(self):
     #     # 价格大于100的
     #     price_min = self.request.query_params.get('price_min', 0)
@@ -94,12 +93,14 @@ class GoodsListViewSet(CacheResponseMixin, mixins.ListModelMixin, mixins.Retriev
     #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     # 商品点击数+1
+
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
         instance.click_num += 1
         instance.save()
         serializer = self.get_serializer(instance)
         return Response(serializer.data)
+
 
 class CategoryViewset(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     """
@@ -124,7 +125,7 @@ class IndexCategoryViewset(mixins.ListModelMixin, viewsets.GenericViewSet):
     """
     首页商品分类数据
     """
-    queryset = GoodsCategory.objects.filter(is_tab=True, name__in=["生鲜食品", "酒水饮料"])
+    queryset = GoodsCategory.objects.filter(is_tab=True, name__in=["文学类"])
     serializer_class = IndexCategorySerializer
 
 
