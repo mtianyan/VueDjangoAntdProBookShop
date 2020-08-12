@@ -28,7 +28,7 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'third_party'))
 SECRET_KEY = 'y5yew=o5yey*9ydgt74-st11qkt$3n_i9r-c+aw$lt0%x3%a^)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -161,9 +161,9 @@ USE_TZ = False
 # 设置上传文件，图片访问路径
 STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "static"),
-# ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 # STATIC_URL = '/static/'
 
 # MEDIA_ROOT = os.path.join(BASE_DIR, "media")
@@ -239,8 +239,8 @@ QINIU_SECURE_URL = 0
 DEFAULT_FILE_STORAGE = 'qiniustorage.backends.QiniuMediaStorage'
 STATICFILES_STORAGE = 'qiniustorage.backends.QiniuStaticStorage'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# MEDIA_ROOT = os.path.join('/root/projects/VueDjangoFrameWorkShop/', 'media')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join('/root/projects/VueDjangoFrameWorkShop/', 'media')
 MEDIA_URL = 'http://{0}/root/projects/VueDjangoFrameWorkShop/media/'.format(QINIU_BUCKET_DOMAIN)
 # STATIC_URL = urljoin('http://{0}'.format(QINIU_BUCKET_DOMAIN), '/static/')
 STATIC_URL = '/static/'
