@@ -15,7 +15,7 @@ from __future__ import unicode_literals
 import copy
 import inspect
 import traceback
-from collections import Mapping, OrderedDict
+from collections import OrderedDict
 
 from django.core.exceptions import ImproperlyConfigured
 from django.core.exceptions import ValidationError as DjangoValidationError
@@ -27,7 +27,7 @@ from django.utils import six, timezone
 from django.utils.functional import cached_property
 from django.utils.translation import ugettext_lazy as _
 
-from rest_framework.compat import postgres_fields, unicode_to_repr
+from rest_framework.compat import Mapping, postgres_fields, unicode_to_repr
 from rest_framework.exceptions import ErrorDetail, ValidationError
 from rest_framework.fields import get_error_detail, set_value
 from rest_framework.settings import api_settings
@@ -367,8 +367,7 @@ class Serializer(BaseSerializer):
     @cached_property
     def _writable_fields(self):
         return [
-            field for field in self.fields.values()
-            if (not field.read_only) or (field.default is not empty)
+            field for field in self.fields.values() if not field.read_only
         ]
 
     @cached_property
@@ -394,7 +393,7 @@ class Serializer(BaseSerializer):
         # Used by the lazily-evaluated `validators` property.
         meta = getattr(self, 'Meta', None)
         validators = getattr(meta, 'validators', None)
-        return validators[:] if validators else []
+        return list(validators) if validators else []
 
     def get_initial(self):
         if hasattr(self, 'initial_data'):
@@ -441,6 +440,33 @@ class Serializer(BaseSerializer):
             raise ValidationError(detail=as_serializer_error(exc))
 
         return value
+
+    def _read_only_defaults(self):
+        fields = [
+            field for field in self.fields.values()
+            if (field.read_only) and (field.default != empty) and (field.source != '*') and ('.' not in field.source)
+        ]
+
+        defaults = OrderedDict()
+        for field in fields:
+            try:
+                default = field.get_default()
+            except SkipField:
+                continue
+            defaults[field.field_name] = default
+
+        return defaults
+
+    def run_validators(self, value):
+        """
+        Add read_only fields with defaults to value before running validators.
+        """
+        if isinstance(value, dict):
+            to_validate = self._read_only_defaults()
+            to_validate.update(value)
+        else:
+            to_validate = value
+        super(Serializer, self).run_validators(to_validate)
 
     def to_internal_value(self, data):
         """
@@ -584,7 +610,7 @@ class ListSerializer(BaseSerializer):
         # We override the default field access in order to support
         # lists in HTML forms.
         if html.is_html_input(dictionary):
-            return html.parse_html_list(dictionary, prefix=self.field_name)
+            return html.parse_html_list(dictionary, prefix=self.field_name, default=empty)
         return dictionary.get(self.field_name, empty)
 
     def run_validation(self, data=empty):
@@ -612,7 +638,7 @@ class ListSerializer(BaseSerializer):
         List of dicts of native values <- List of dicts of primitive datatypes.
         """
         if html.is_html_input(data):
-            data = html.parse_html_list(data)
+            data = html.parse_html_list(data, default=[])
 
         if not isinstance(data, list):
             message = self.error_messages['not_a_list'].format(
@@ -914,19 +940,21 @@ class ModelSerializer(Serializer):
                 many_to_many[field_name] = validated_data.pop(field_name)
 
         try:
-            instance = ModelClass.objects.create(**validated_data)
+            instance = ModelClass._default_manager.create(**validated_data)
         except TypeError:
             tb = traceback.format_exc()
             msg = (
-                'Got a `TypeError` when calling `%s.objects.create()`. '
+                'Got a `TypeError` when calling `%s.%s.create()`. '
                 'This may be because you have a writable field on the '
                 'serializer class that is not a valid argument to '
-                '`%s.objects.create()`. You may need to make the field '
+                '`%s.%s.create()`. You may need to make the field '
                 'read-only, or override the %s.create() method to handle '
                 'this correctly.\nOriginal exception was:\n %s' %
                 (
                     ModelClass.__name__,
+                    ModelClass._default_manager.name,
                     ModelClass.__name__,
+                    ModelClass._default_manager.name,
                     self.__class__.__name__,
                     tb
                 )
@@ -1452,7 +1480,7 @@ class ModelSerializer(Serializer):
         # If the validators have been declared explicitly then use that.
         validators = getattr(getattr(self, 'Meta', None), 'validators', None)
         if validators is not None:
-            return validators[:]
+            return list(validators)
 
         # Otherwise use the default set of validators.
         return (
@@ -1476,6 +1504,12 @@ class ModelSerializer(Serializer):
         field_names = {
             field.source for field in self._writable_fields
             if (field.source != '*') and ('.' not in field.source)
+        }
+
+        # Special Case: Add read_only fields with defaults.
+        field_names |= {
+            field.source for field in self.fields.values()
+            if (field.read_only) and (field.default != empty) and (field.source != '*') and ('.' not in field.source)
         }
 
         # Note that we make sure to check `unique_together` both on the

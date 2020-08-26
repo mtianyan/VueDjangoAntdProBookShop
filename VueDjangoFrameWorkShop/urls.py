@@ -121,4 +121,6 @@ urlpatterns = [
     path('', include('social_django.urls', namespace='social')),
 
     path('favicon.ico', favicon_view),
+
+    path('api/xadmin/v1/', include('xadmin_api.urls')),
 ]

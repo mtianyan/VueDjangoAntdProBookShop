@@ -45,16 +45,6 @@ def _divide_with_ceil(a, b):
     return a // b
 
 
-def _get_count(queryset):
-    """
-    Determine an object count, supporting either querysets or regular lists.
-    """
-    try:
-        return queryset.count()
-    except (AttributeError, TypeError):
-        return len(queryset)
-
-
 def _get_displayed_page_numbers(current, final):
     """
     This utility function determines a list of page numbers to display.
@@ -332,7 +322,7 @@ class LimitOffsetPagination(BasePagination):
     template = 'rest_framework/pagination/numbers.html'
 
     def paginate_queryset(self, queryset, request, view=None):
-        self.count = _get_count(queryset)
+        self.count = self.get_count(queryset)
         self.limit = self.get_limit(request)
         if self.limit is None:
             return None
@@ -468,12 +458,21 @@ class LimitOffsetPagination(BasePagination):
             )
         ]
 
+    def get_count(self, queryset):
+        """
+        Determine an object count, supporting either querysets or regular lists.
+        """
+        try:
+            return queryset.count()
+        except (AttributeError, TypeError):
+            return len(queryset)
+
 
 class CursorPagination(BasePagination):
     """
     The cursor pagination implementation is necessarily complex.
     For an overview of the position/offset style we use, see this post:
-    http://cra.mr/2011/03/08/building-cursors-for-the-disqus-api
+    https://cra.mr/2011/03/08/building-cursors-for-the-disqus-api
     """
     cursor_query_param = 'cursor'
     cursor_query_description = _('The pagination cursor value.')
@@ -545,12 +544,11 @@ class CursorPagination(BasePagination):
             has_following_position = False
             following_position = None
 
-        # If we have a reverse queryset, then the query ordering was in reverse
-        # so we need to reverse the items again before returning them to the user.
         if reverse:
+            # If we have a reverse queryset, then the query ordering was in reverse
+            # so we need to reverse the items again before returning them to the user.
             self.page = list(reversed(self.page))
 
-        if reverse:
             # Determine next and previous positions for reverse cursors.
             self.has_next = (current_position is not None) or (offset > 0)
             self.has_previous = has_following_position

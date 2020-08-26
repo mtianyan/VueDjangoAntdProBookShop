@@ -5,11 +5,19 @@ versions of Django/Python, and compatibility wrappers around optional packages.
 
 from __future__ import unicode_literals
 
-import django
+import sys
+
 from django.conf import settings
 from django.core import validators
 from django.utils import six
 from django.views.generic import View
+
+try:
+    # Python 3
+    from collections.abc import Mapping, MutableMapping   # noqa
+except ImportError:
+    # Python 2.7
+    from collections import Mapping, MutableMapping   # noqa
 
 try:
     from django.urls import (  # noqa
@@ -22,6 +30,16 @@ except ImportError:
         RegexURLPattern as URLPattern,
         RegexURLResolver as URLResolver,
     )
+
+try:
+    from django.core.validators import ProhibitNullCharactersValidator  # noqa
+except ImportError:
+    ProhibitNullCharactersValidator = None
+
+try:
+    from unittest import mock
+except ImportError:
+    mock = None
 
 
 def get_original_route(urlpattern):
@@ -90,7 +108,7 @@ def unicode_to_repr(value):
 
 def unicode_http_header(value):
     # Coerce HTTP header value to unicode.
-    if isinstance(value, six.binary_type):
+    if isinstance(value, bytes):
         return value.decode('iso-8859-1')
     return value
 
@@ -125,6 +143,13 @@ except ImportError:
     coreschema = None
 
 
+# pyyaml is optional
+try:
+    import yaml
+except ImportError:
+    yaml = None
+
+
 # django-crispy-forms is optional
 try:
     import crispy_forms
@@ -139,14 +164,20 @@ except ImportError:
     requests = None
 
 
-# Django-guardian is optional. Import only if guardian is in INSTALLED_APPS
-# Fixes (#1712). We keep the try/except for the test suite.
-guardian = None
-try:
-    if 'guardian' in settings.INSTALLED_APPS:
-        import guardian  # noqa
-except ImportError:
-    pass
+def is_guardian_installed():
+    """
+    django-guardian is optional and only imported if in INSTALLED_APPS.
+    """
+    try:
+        import guardian
+    except ImportError:
+        guardian = None
+
+    if six.PY2 and (not guardian or guardian.VERSION >= (1, 5)):
+        # Guardian 1.5.0, for Django 2.2 is NOT compatible with Python 2.7.
+        # Remove when dropping PY2.
+        return False
+    return 'guardian' in settings.INSTALLED_APPS
 
 
 # PATCH method is not implemented by Django
@@ -245,12 +276,6 @@ else:
     def md_filter_add_syntax_highlight(md):
         return False
 
-# pytz is required from Django 1.11. Remove when dropping Django 1.10 support.
-try:
-    import pytz  # noqa
-    from pytz.exceptions import InvalidTimeError
-except ImportError:
-    InvalidTimeError = Exception
 
 # Django 1.x url routing syntax. Remove when dropping Django 1.11 support.
 try:
@@ -303,9 +328,5 @@ class MaxLengthValidator(CustomValidatorMessage, validators.MaxLengthValidator):
     pass
 
 
-def authenticate(request=None, **credentials):
-    from django.contrib.auth import authenticate
-    if django.VERSION < (1, 11):
-        return authenticate(**credentials)
-    else:
-        return authenticate(request=request, **credentials)
+# Version Constants.
+PY36 = sys.version_info >= (3, 6)

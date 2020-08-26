@@ -21,29 +21,43 @@ from rest_framework.settings import api_settings
 from rest_framework.utils import formatting
 
 
-def get_view_name(view_cls, suffix=None):
+def get_view_name(view):
     """
-    Given a view class, return a textual name to represent the view.
+    Given a view instance, return a textual name to represent the view.
     This name is used in the browsable API, and in OPTIONS responses.
+
     This function is the default for the `VIEW_NAME_FUNCTION` setting.
     """
-    name = view_cls.__name__
+    # Name may be set by some Views, such as a ViewSet.
+    name = getattr(view, 'name', None)
+    if name is not None:
+        return name
+
+    name = view.__class__.__name__
     name = formatting.remove_trailing_string(name, 'View')
     name = formatting.remove_trailing_string(name, 'ViewSet')
     name = formatting.camelcase_to_spaces(name)
+
+    # Suffix may be set by some Views, such as a ViewSet.
+    suffix = getattr(view, 'suffix', None)
     if suffix:
         name += ' ' + suffix
 
     return name
 
 
-def get_view_description(view_cls, html=False):
+def get_view_description(view, html=False):
     """
-    Given a view class, return a textual description to represent the view.
+    Given a view instance, return a textual description to represent the view.
     This name is used in the browsable API, and in OPTIONS responses.
+
     This function is the default for the `VIEW_DESCRIPTION_FUNCTION` setting.
     """
-    description = view_cls.__doc__ or ''
+    # Description may be set by some Views, such as a ViewSet.
+    description = getattr(view, 'description', None)
+    if description is None:
+        description = view.__class__.__doc__ or ''
+
     description = formatting.dedent(smart_text(description))
     if html:
         return formatting.markup_description(description)
@@ -59,8 +73,10 @@ def set_rollback():
 def exception_handler(exc, context):
     """
     Returns the response that should be used for any given exception.
+
     By default we handle the REST framework `APIException`, and also
     Django's built-in `Http404` and `PermissionDenied` exceptions.
+
     Any unhandled exceptions may return `None`, which will cause a 500 error
     to be raised.
     """
@@ -108,6 +124,7 @@ class APIView(View):
     def as_view(cls, **initkwargs):
         """
         Store the original class on the view function.
+
         This allows us to discover information about the view when we do URL
         reverse lookups.  Used for breadcrumb generation.
         """
@@ -219,7 +236,7 @@ class APIView(View):
         browsable API.
         """
         func = self.settings.VIEW_NAME_FUNCTION
-        return func(self.__class__, getattr(self, 'suffix', None))
+        return func(self)
 
     def get_view_description(self, html=False):
         """
@@ -227,7 +244,7 @@ class APIView(View):
         and in the browsable API.
         """
         func = self.settings.VIEW_DESCRIPTION_FUNCTION
-        return func(self.__class__, html)
+        return func(self, html)
 
     # API policy instantiation methods
 
@@ -301,6 +318,7 @@ class APIView(View):
     def perform_authentication(self, request):
         """
         Perform authentication on the incoming request.
+
         Note that if you override this and simply 'pass', then authentication
         will instead be performed lazily, the first time either
         `request.user` or `request.auth` is accessed.

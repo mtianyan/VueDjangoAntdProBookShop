@@ -11,12 +11,14 @@ from __future__ import unicode_literals
 import types
 import warnings
 
+from django.forms.utils import pretty_name
 from django.utils import six
 
+from rest_framework import RemovedInDRF310Warning
 from rest_framework.views import APIView
 
 
-def api_view(http_method_names=None, exclude_from_schema=False):
+def api_view(http_method_names=None):
     """
     Decorator that converts a function-based view into an APIView subclass.
     Takes a list of allowed methods for the view as an argument.
@@ -76,15 +78,8 @@ def api_view(http_method_names=None, exclude_from_schema=False):
         WrappedAPIView.schema = getattr(func, 'schema',
                                         APIView.schema)
 
-        if exclude_from_schema:
-            warnings.warn(
-                "The `exclude_from_schema` argument to `api_view` is pending deprecation. "
-                "Use the `schema` decorator instead, passing `None`.",
-                PendingDeprecationWarning
-            )
-            WrappedAPIView.exclude_from_schema = exclude_from_schema
-
         return WrappedAPIView.as_view()
+
     return decorator
 
 
@@ -144,14 +139,84 @@ def action(methods=None, detail=None, url_path=None, url_name=None, **kwargs):
         "@action() missing required argument: 'detail'"
     )
 
+    # name and suffix are mutually exclusive
+    if 'name' in kwargs and 'suffix' in kwargs:
+        raise TypeError("`name` and `suffix` are mutually exclusive arguments.")
+
     def decorator(func):
-        func.bind_to_methods = methods
+        func.mapping = MethodMapper(func, methods)
+
         func.detail = detail
-        func.url_path = url_path or func.__name__
-        func.url_name = url_name or func.__name__.replace('_', '-')
+        func.url_path = url_path if url_path else func.__name__
+        func.url_name = url_name if url_name else func.__name__.replace('_', '-')
         func.kwargs = kwargs
+
+        # Set descriptive arguments for viewsets
+        if 'name' not in kwargs and 'suffix' not in kwargs:
+            func.kwargs['name'] = pretty_name(func.__name__)
+        func.kwargs['description'] = func.__doc__ or None
+
         return func
     return decorator
+
+
+class MethodMapper(dict):
+    """
+    Enables mapping HTTP methods to different ViewSet methods for a single,
+    logical action.
+
+    Example usage:
+
+        class MyViewSet(ViewSet):
+
+            @action(detail=False)
+            def example(self, request, **kwargs):
+                ...
+
+            @example.mapping.post
+            def create_example(self, request, **kwargs):
+                ...
+    """
+
+    def __init__(self, action, methods):
+        self.action = action
+        for method in methods:
+            self[method] = self.action.__name__
+
+    def _map(self, method, func):
+        assert method not in self, (
+            "Method '%s' has already been mapped to '.%s'." % (method, self[method]))
+        assert func.__name__ != self.action.__name__, (
+            "Method mapping does not behave like the property decorator. You "
+            "cannot use the same method name for each mapping declaration.")
+
+        self[method] = func.__name__
+
+        return func
+
+    def get(self, func):
+        return self._map('get', func)
+
+    def post(self, func):
+        return self._map('post', func)
+
+    def put(self, func):
+        return self._map('put', func)
+
+    def patch(self, func):
+        return self._map('patch', func)
+
+    def delete(self, func):
+        return self._map('delete', func)
+
+    def head(self, func):
+        return self._map('head', func)
+
+    def options(self, func):
+        return self._map('options', func)
+
+    def trace(self, func):
+        return self._map('trace', func)
 
 
 def detail_route(methods=None, **kwargs):
@@ -159,11 +224,17 @@ def detail_route(methods=None, **kwargs):
     Used to mark a method on a ViewSet that should be routed for detail requests.
     """
     warnings.warn(
-        "`detail_route` is pending deprecation and will be removed in 3.10 in favor of "
+        "`detail_route` is deprecated and will be removed in 3.10 in favor of "
         "`action`, which accepts a `detail` bool. Use `@action(detail=True)` instead.",
-        PendingDeprecationWarning, stacklevel=2
+        RemovedInDRF310Warning, stacklevel=2
     )
-    return action(methods, detail=True, **kwargs)
+
+    def decorator(func):
+        func = action(methods, detail=True, **kwargs)(func)
+        if 'url_name' not in kwargs:
+            func.url_name = func.url_path.replace('_', '-')
+        return func
+    return decorator
 
 
 def list_route(methods=None, **kwargs):
@@ -171,8 +242,14 @@ def list_route(methods=None, **kwargs):
     Used to mark a method on a ViewSet that should be routed for list requests.
     """
     warnings.warn(
-        "`list_route` is pending deprecation and will be removed in 3.10 in favor of "
+        "`list_route` is deprecated and will be removed in 3.10 in favor of "
         "`action`, which accepts a `detail` bool. Use `@action(detail=False)` instead.",
-        PendingDeprecationWarning, stacklevel=2
+        RemovedInDRF310Warning, stacklevel=2
     )
-    return action(methods, detail=False, **kwargs)
+
+    def decorator(func):
+        func = action(methods, detail=False, **kwargs)(func)
+        if 'url_name' not in kwargs:
+            func.url_name = func.url_path.replace('_', '-')
+        return func
+    return decorator

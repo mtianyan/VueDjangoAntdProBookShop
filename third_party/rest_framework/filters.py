@@ -5,6 +5,7 @@ returned by list views.
 from __future__ import unicode_literals
 
 import operator
+import warnings
 from functools import reduce
 
 from django.core.exceptions import ImproperlyConfigured
@@ -16,7 +17,10 @@ from django.utils import six
 from django.utils.encoding import force_text
 from django.utils.translation import ugettext_lazy as _
 
-from rest_framework.compat import coreapi, coreschema, distinct, guardian
+from rest_framework import RemovedInDRF310Warning
+from rest_framework.compat import (
+    coreapi, coreschema, distinct, is_guardian_installed
+)
 from rest_framework.settings import api_settings
 
 
@@ -50,6 +54,14 @@ class SearchFilter(BaseFilterBackend):
     search_title = _('Search')
     search_description = _('A search term.')
 
+    def get_search_fields(self, view, request):
+        """
+        Search fields are obtained from the view, but the request is always
+        passed to this method. Sub-classes can override this method to
+        dynamically change the search fields based on request content.
+        """
+        return getattr(view, 'search_fields', None)
+
     def get_search_terms(self, request):
         """
         Search terms are set by a ?search=... query parameter,
@@ -74,6 +86,9 @@ class SearchFilter(BaseFilterBackend):
             opts = queryset.model._meta
             if search_field[0] in self.lookup_prefixes:
                 search_field = search_field[1:]
+            # Annotated fields do not need to be distinct
+            if isinstance(queryset, models.QuerySet) and search_field in queryset.query.annotations:
+                return False
             parts = search_field.split(LOOKUP_SEP)
             for part in parts:
                 field = opts.get_field(part)
@@ -87,7 +102,7 @@ class SearchFilter(BaseFilterBackend):
         return False
 
     def filter_queryset(self, request, queryset, view):
-        search_fields = getattr(view, 'search_fields', None)
+        search_fields = self.get_search_fields(view, request)
         search_terms = self.get_search_terms(request)
 
         if not search_fields or not search_terms:
@@ -242,7 +257,7 @@ class OrderingFilter(BaseFilterBackend):
 
     def get_template_context(self, request, queryset, view):
         current = self.get_ordering(request, queryset, view)
-        current = None if current is None else current[0]
+        current = None if not current else current[0]
         options = []
         context = {
             'request': request,
@@ -282,7 +297,12 @@ class DjangoObjectPermissionsFilter(BaseFilterBackend):
     has read object level permissions.
     """
     def __init__(self):
-        assert guardian, 'Using DjangoObjectPermissionsFilter, but django-guardian is not installed'
+        warnings.warn(
+            "`DjangoObjectPermissionsFilter` has been deprecated and moved to "
+            "the 3rd-party django-rest-framework-guardian package.",
+            RemovedInDRF310Warning, stacklevel=2
+        )
+        assert is_guardian_installed(), 'Using DjangoObjectPermissionsFilter, but django-guardian is not installed'
 
     perm_format = '%(app_label)s.view_%(model_name)s'
 
@@ -290,6 +310,7 @@ class DjangoObjectPermissionsFilter(BaseFilterBackend):
         # We want to defer this import until run-time, rather than import-time.
         # See https://github.com/encode/django-rest-framework/issues/4608
         # (Also see #1624 for why we need to make this import explicitly)
+        from guardian import VERSION as guardian_version
         from guardian.shortcuts import get_objects_for_user
 
         extra = {}
@@ -300,7 +321,7 @@ class DjangoObjectPermissionsFilter(BaseFilterBackend):
             'model_name': model_cls._meta.model_name
         }
         permission = self.perm_format % kwargs
-        if tuple(guardian.VERSION) >= (1, 3):
+        if tuple(guardian_version) >= (1, 3):
             # Maintain behavior compatibility with versions prior to 1.3
             extra = {'accept_global_perms': False}
         else:

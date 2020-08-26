@@ -4,7 +4,6 @@ generators.py   # Top-down schema generation
 See schemas.__init__.py for package overview.
 """
 import re
-import warnings
 from collections import Counter, OrderedDict
 from importlib import import_module
 
@@ -58,7 +57,7 @@ Schema Naming Collision.
 coreapi.Link for URL path {value_url} cannot be inserted into schema.
 Position conflicts with coreapi.Link for URL path {target_url}.
 
-Attemped to insert link with keys: {keys}.
+Attempted to insert link with keys: {keys}.
 
 Adjust URLs to avoid naming collision or override `SchemaGenerator.get_keys()`
 to customise schema structure.
@@ -207,16 +206,12 @@ class EndpointEnumerator(object):
         if not is_api_view(callback):
             return False  # Ignore anything except REST framework views.
 
-        if hasattr(callback.cls, 'exclude_from_schema'):
-            fmt = ("The `{}.exclude_from_schema` attribute is pending deprecation. "
-                   "Set `schema = None` instead.")
-            msg = fmt.format(callback.cls.__name__)
-            warnings.warn(msg, PendingDeprecationWarning)
-            if getattr(callback.cls, 'exclude_from_schema', False):
-                return False
-
         if callback.cls.schema is None:
             return False
+
+        if 'schema' in callback.initkwargs:
+            if callback.initkwargs['schema'] is None:
+                return False
 
         if path.endswith('.{format}') or path.endswith('.{format}/'):
             return False  # Ignore .json style URLs.
@@ -365,9 +360,7 @@ class SchemaGenerator(object):
         """
         Given a callback, return an actual view instance.
         """
-        view = callback.cls()
-        for attr, val in getattr(callback, 'initkwargs', {}).items():
-            setattr(view, attr, val)
+        view = callback.cls(**getattr(callback, 'initkwargs', {}))
         view.args = ()
         view.kwargs = {}
         view.format_kwarg = None

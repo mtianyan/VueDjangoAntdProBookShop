@@ -66,7 +66,9 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'social_django',
     'raven.contrib.django.raven_compat',
-    'replace.apps.ReplaceConfig'
+    'replace.apps.ReplaceConfig',
+    'xadmin_api',
+    'captcha'
 ]
 
 MIDDLEWARE = [
@@ -169,6 +171,9 @@ STATICFILES_DIRS = [
 # MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 # 所有与drf相关的设置写在这里面
 REST_FRAMEWORK = {
+    'DATETIME_FORMAT': '%Y-%m-%d %H:%M:%S',
+    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    # 'PAGE_SIZE': 100,
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
@@ -230,14 +235,14 @@ SOCIAL_AUTH_QQ_SECRET = 'bazqux'
 SOCIAL_AUTH_WEIXIN_KEY = 'foobar'
 SOCIAL_AUTH_WEIXIN_SECRET = 'bazqux'
 
-QINIU_ACCESS_KEY = 'h_r41Eu27LsUkO5lS99TLxWjwJg9CXA_Pz2dZ5k8'
-QINIU_SECRET_KEY = 'xp2UcNU0AGMYhMHCkaZKdnJUqSuq1EPqPaNPuf7Q'
-QINIU_BUCKET_NAME = ' vueshopstatic'
+# QINIU_ACCESS_KEY = 'h_r41Eu27LsUkO5lS99TLxWjwJg9CXA_Pz2dZ5k8'
+# QINIU_SECRET_KEY = 'xp2UcNU0AGMYhMHCkaZKdnJUqSuq1EPqPaNPuf7Q'
+# QINIU_BUCKET_NAME = ' vueshopstatic'
 QINIU_BUCKET_DOMAIN = 'vueshopstatic.mtianyan.cn'
-QINIU_SECURE_URL = 0
-
-DEFAULT_FILE_STORAGE = 'qiniustorage.backends.QiniuMediaStorage'
-STATICFILES_STORAGE = 'qiniustorage.backends.QiniuStaticStorage'
+# QINIU_SECURE_URL = 0
+#
+# DEFAULT_FILE_STORAGE = 'qiniustorage.backends.QiniuMediaStorage'
+# STATICFILES_STORAGE = 'qiniustorage.backends.QiniuStaticStorage'
 
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_ROOT = os.path.join('/root/projects/VueDjangoFrameWorkShop/', 'media')

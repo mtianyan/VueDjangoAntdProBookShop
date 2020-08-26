@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d759b68d-8e11-498f-a901-459a09152f28" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../third_party/rest_framework/management/commands/generateschema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/auto_filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/auto_serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/auto_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/custom.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/dashboard.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/migrations/0002_auto_20200823_1840.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/pagination.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/BannerList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/BannerList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/BannerList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/BannerList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsCategoryBrandList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsCategoryBrandList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsCategoryBrandList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsCategoryBrandList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsCategoryList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsCategoryList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsCategoryList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsCategoryList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsImageList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsImageList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsImageList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsImageList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/GoodsList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/HotSearchWordsList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/HotSearchWordsList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/HotSearchWordsList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/HotSearchWordsList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/IndexAdList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/IndexAdList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/IndexAdList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/IndexAdList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/OrderGoodsList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/OrderGoodsList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/OrderGoodsList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/OrderGoodsList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/OrderInfoList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/OrderInfoList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/OrderInfoList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/OrderInfoList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/ShoppingCartList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/ShoppingCartList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/ShoppingCartList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/ShoppingCartList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserAddressList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserAddressList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserAddressList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserAddressList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserFavList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserFavList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserFavList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserFavList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserLeavingMessageList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserLeavingMessageList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserLeavingMessageList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserLeavingMessageList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserProfileList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserProfileList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserProfileList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/UserProfileList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/VerifyCodeList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/VerifyCodeList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/VerifyCodeList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/VerifyCodeList/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/VersionControlList/components/CreateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/VersionControlList/components/UpdateForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/VersionControlList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xadmin_api_cli/tmp/VersionControlList/service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VueDjangoFrameWorkShop/local_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../VueDjangoFrameWorkShop/local_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VueDjangoFrameWorkShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../VueDjangoFrameWorkShop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VueDjangoFrameWorkShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../VueDjangoFrameWorkShop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apps/goods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../apps/goods/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apps/trade/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../apps/trade/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apps/user_operation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../apps/user_operation/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/book-store/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front_end/book-store/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/book-store/src/views/index/banners.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front_end/book-store/src/views/index/banners.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/.prettierrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/.stylelintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/config/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/config/defaultSettings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/config/proxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/mock/listTableList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/mock/notices.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/mock/route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/mock/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/public/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/public/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/public/home_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/public/icons/icon-128x128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/public/icons/icon-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/public/icons/icon-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/public/pro_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/Authorized/Authorized.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/Authorized/AuthorizedRoute.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/Authorized/CheckPermissions.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/Authorized/PromiseRender.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/Authorized/Secured.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/Authorized/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/Authorized/renderAuthorize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/GlobalHeader/AvatarDropdown.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/GlobalHeader/NoticeIconView.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/GlobalHeader/RightContent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/GlobalHeader/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/HeaderDropdown/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/HeaderDropdown/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/HeaderSearch/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/HeaderSearch/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/NoticeIcon/NoticeList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/NoticeIcon/NoticeList.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/NoticeIcon/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/NoticeIcon/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/components/PageLoading/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/e2e/__mocks__/antd-pro-merge-less.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/e2e/baseLayout.e2e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/global.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/global.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/layouts/BasicLayout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/layouts/BlankLayout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/layouts/SecurityLayout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/layouts/UserLayout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/layouts/UserLayout.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/en-US.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/en-US/component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/en-US/globalHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/en-US/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/en-US/pwa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/en-US/settingDrawer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/en-US/settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/pt-BR/component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/pt-BR/globalHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/pt-BR/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/pt-BR/pwa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/pt-BR/settingDrawer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/pt-BR/settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-CN/component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-CN/globalHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-CN/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-CN/pwa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-CN/settingDrawer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-CN/settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-TW/component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-TW/globalHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-TW/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-TW/pwa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-TW/settingDrawer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/locales/zh-TW/settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/models/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/models/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/models/setting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/models/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/404.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/Admin.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/Authorized.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/BannerList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/BannerList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/BannerList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/BannerList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/BannerList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/BannerList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CityList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CityList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CityList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CityList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CodeList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CodeList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CodeList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CodeList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CodeList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CodeList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CommentList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CommentList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CommentList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CommentList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CommentList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CommentList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/ConfList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/ConfList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CourseList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CourseList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CourseList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CourseList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CourseList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/CourseList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/Bar/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/ChartCard/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/ChartCard/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/Field/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/Field/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/Gauge/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/MiniArea/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/MiniBar/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/MiniProgress/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/MiniProgress/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/Pie/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/Pie/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/TagCloud/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/TagCloud/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/TimelineChart/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/TimelineChart/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/WaterWave/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/WaterWave/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/autoHeight.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/bizcharts.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Charts/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/IntroduceRow.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/NumberInfo/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/NumberInfo/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/OfflineData.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/PageLoading/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/ProportionSales.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/SalesCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/TopSearch.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Trend/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/components/Trend/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/locales/en-US.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/locales/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/locales/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/locales/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/model.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/service.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/utils/Yuan.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/utils/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/DashBoard/utils/utils.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/LessonList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/LessonList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/LessonList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/LessonList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/LessonList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/LessonList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/OrgList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/OrgList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/OrgList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/OrgList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/OrgList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/OrgList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/ResourceList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/ResourceList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/ResourceList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/ResourceList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/ResourceList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/ResourceList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/RoleList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/RoleList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/RoleList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/RoleList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/RoleList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/RoleList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/TeacherList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/TeacherList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/TeacherList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/TeacherList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/TeacherList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/TeacherList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/components/Step1/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/components/Step1/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/components/Step2/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/components/Step2/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/components/Step3/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/components/Step3/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/components/UploadAvatar/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/components/UploadAvatar/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/components/UploadBasic/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/components/UploadBasic/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/management/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/locales/en-US.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/locales/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/locales/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/locales/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UploadConfFile/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserAskList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserAskList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserAskList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserAskList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserAskList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserAskList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserCourseList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserCourseList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserCourseList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserCourseList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserCourseList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserCourseList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserFav/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserFav/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserFav/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserFav/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserFav/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserFav/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserLogin/components/Login/LoginContext.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserLogin/components/Login/LoginItem.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserLogin/components/Login/LoginSubmit.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserLogin/components/Login/LoginTab.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserLogin/components/Login/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserLogin/components/Login/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserLogin/components/Login/map.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserLogin/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserLogin/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserMessage/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserMessage/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserMessage/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserMessage/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserMessage/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/UserMessage/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/VideoList/_mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/VideoList/components/CreateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/VideoList/components/UpdateForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/VideoList/data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/VideoList/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/VideoList/service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/Welcome.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/Welcome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/pages/document.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/services/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/services/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/utils/Authorized.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/utils/authority.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/utils/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/utils/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/utils/utils.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/src/utils/utils.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/tests/PuppeteerEnvironment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/tests/beforeTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/tests/getBrowser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/xadmin/tests/run-tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/authentication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/authtoken/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/authtoken/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/authtoken/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/authtoken/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/ach/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/ar/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/be/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/ca/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/ca_ES/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/cs/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/da/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/de/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/locale/de/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/de/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/management/commands/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/el/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/el_GR/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/en/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/en_AU/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/en_CA/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/en_US/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/es/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/et/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/fa/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/fa_IR/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/fi/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/fr/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/fr_CA/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/gl/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/gl_ES/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/he_IL/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/hu/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/id/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/it/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/ja/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/ko_KR/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/lv/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/locale/lv/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/lv/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/../xadmin_api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/mk/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/locale/mk/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/mk/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/nb/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/nl/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/nn/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/no/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/pl/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/pt/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/pt_BR/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/pt_PT/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/ro/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/ru/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/sk/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/sl/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/sv/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/tr/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/tr_TR/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/uk/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/vi/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/zh_CN/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/zh_Hans/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/locale/zh_Hans/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/zh_Hans/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/zh_Hant/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/locale/zh_TW/LC_MESSAGES/django.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/metadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/metadata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/pagination.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/permissions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/relations.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/relations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/renderers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/renderers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/routers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/routers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/schemas/generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/schemas/generators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/schemas/inspectors.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/schemas/inspectors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/schemas/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/schemas/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/static/rest_framework/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/static/rest_framework/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/static/rest_framework/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/static/rest_framework/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/static/rest_framework/docs/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/static/rest_framework/docs/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/static/rest_framework/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/static/rest_framework/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/static/rest_framework/js/csrf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/static/rest_framework/js/csrf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/static/rest_framework/js/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/static/rest_framework/js/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/admin/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/admin/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/docs/langs/shell.html" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/docs/langs/shell.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/docs/link.html" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/docs/link.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/filters/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/filters/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/filters/ordering.html" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/filters/ordering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/filters/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/templates/rest_framework/filters/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/templatetags/rest_framework.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/templatetags/rest_framework.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/utils/breadcrumbs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/utils/breadcrumbs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/utils/encoders.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/utils/encoders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/utils/field_mapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/utils/field_mapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/utils/html.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/utils/html.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/utils/humanize_datetime.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/utils/humanize_datetime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/utils/serializer_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/utils/serializer_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/versioning.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/versioning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../third_party/rest_framework/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/../third_party/rest_framework/viewsets.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gRv3oAaMzN6HVtqwwtH0UfcrlP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/components/protable" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start:dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d759b68d-8e11-498f-a901-459a09152f28" name="Default Changelist" comment="" />
+      <created>1598090023252</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598090023252</updated>
+      <workItem from="1598090024353" duration="18439000" />
+      <workItem from="1598154146438" duration="11261000" />
+      <workItem from="1598170715257" duration="7713000" />
+      <workItem from="1598182088964" duration="305000" />
+      <workItem from="1598185733775" duration="3972000" />
+      <workItem from="1598448601539" duration="3586000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1259" height="376" key="GridCell.Tab.0.bottom" timestamp="1598458089432">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state width="1259" height="376" key="GridCell.Tab.0.bottom/0.23.2560.1333/-1680.0.1680.1050@0.23.2560.1333" timestamp="1598458089432" />
+    <state width="1259" height="376" key="GridCell.Tab.0.center" timestamp="1598458089431">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state width="1259" height="376" key="GridCell.Tab.0.center/0.23.2560.1333/-1680.0.1680.1050@0.23.2560.1333" timestamp="1598458089431" />
+    <state width="1259" height="376" key="GridCell.Tab.0.left" timestamp="1598458089430">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state width="1259" height="376" key="GridCell.Tab.0.left/0.23.2560.1333/-1680.0.1680.1050@0.23.2560.1333" timestamp="1598458089430" />
+    <state width="1259" height="376" key="GridCell.Tab.0.right" timestamp="1598458089431">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state width="1259" height="376" key="GridCell.Tab.0.right/0.23.2560.1333/-1680.0.1680.1050@0.23.2560.1333" timestamp="1598458089431" />
+    <state x="422" y="224" width="1797" height="1132" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598181268328">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state x="422" y="224" width="1797" height="1132" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.2560.1333/-1680.0.1680.1050@0.23.2560.1333" timestamp="1598181268328" />
+    <state x="1268" y="188" width="1662" height="909" key="dock-window-1" timestamp="1598102025714">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state x="1268" y="188" width="1662" height="909" key="dock-window-1/0.23.2560.1333/-1680.0.1680.1050@0.23.2560.1333" timestamp="1598102025714" />
+    <state x="1389" y="459" width="584" height="522" key="find.popup" timestamp="1598182322705">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state x="1389" y="459" width="584" height="522" key="find.popup/0.23.2560.1333/-1680.0.1680.1050@0.23.2560.1333" timestamp="1598182322705" />
+    <state x="1765" y="338" width="670" height="676" key="search.everywhere.popup" timestamp="1598159442036">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state x="1765" y="338" width="670" height="676" key="search.everywhere.popup/0.23.2560.1333/-1680.0.1680.1050@0.23.2560.1333" timestamp="1598159442036" />
+  </component>
+</project>
