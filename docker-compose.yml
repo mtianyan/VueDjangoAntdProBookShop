@@ -7,8 +7,6 @@ mtianyan_mysql:
       - MYSQL_DATABASE=vue_shop # name you want for the database
       - MYSQL_USER=root # change to whatever username you wantr
       - MYSQL_ROOT_PASSWORD=mtianyanroot #change to good root password
-    ports:
-      - "3309:3306"
     volumes:
       - "./db:/var/lib/mysql"
 
@@ -17,7 +15,7 @@ mtianyan_nginx:
   restart: always
   image: nginx
   ports:
-    - "82:80"
+    - "8811:80"
   volumes:
     - ./conf/nginx_book.conf:/etc/nginx/conf.d/nginx_book.conf
   volumes_from:
@@ -28,8 +26,6 @@ mtianyan_nginx:
 mtianyan_book_store:
   restart: always
   build: .
-  ports:
-    - "8001:8000"
   volumes:
     - .:/VueDjangoFrameWorkShop
     - ./conf/uwsgi.ini:/etc/uwsgi.ini

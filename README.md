@@ -22,8 +22,8 @@ cd VueDjangoAntdProBookShop
 docker-compose up
 
 # 导入数据
-docker exec -it onlinemooc_mtianyan_mysql_1 bash
-mysql -u root -p -D mxonline3 < sql/mxonline3.sql
+docker exec -it vuedjangoantdprobookshop_mtianyan_mysql_1 bash
+mysql -u root -p -D book_shop < sql/book_shop.sql.sql
 # 输入密码: mtianyanroot 
 ```
 
@@ -32,12 +32,12 @@ mysql -u root -p -D mxonline3 < sql/mxonline3.sql
 后端项目运行:
 
 ```
-git clone https://github.com/mtianyan/OnlineMooc.git
-cd OnlineMooc
+git clone https://github.com/mtianyan/VueDjangoAntdProBookShop.git
+cd VueDjangoAntdProBookShop
 pipenv shell
 pip install -r requirements.txt
 
-# Navicat创建数据库，导入mxonline3.sql
+# Navicat创建数据库，book_shop.sql.sql
 # 修改settings.py 中数据库密码
 
 python manage.py runserver
@@ -48,54 +48,3 @@ python manage.py runserver
 微信打赏:
 
 ![mark](http://myphoto.mtianyan.cn/blog/180302/i52eHgilfD.png?imageslim)
-
-
-
-
-
-
->账号: mtianyan
-密码: admin2020
-
-- 首页地址: https://mooc.funpython.cn/
-
-## 运行指南:
-
-### docker运行
-
-```
-git clone https://github.com/mtianyan/OnlineMooc.git
-cd OnlineMooc
-docker-compose up
-
-# 导入数据
-docker exec -it onlinemooc_mtianyan_mysql_1 bash
-mysql -u root -p -D mxonline3 < sql/mxonline3.sql
-# 输入密码: mtianyanroot 
-```
-
-### 本地环境运行
-
-后端项目运行:
-
-```
-git clone https://github.com/mtianyan/OnlineMooc.git
-cd OnlineMooc
-pipenv shell
-pip install -r requirements.txt
-
-# Navicat创建数据库，导入mxonline3.sql
-# 修改settings.py 中数据库密码
-
-python manage.py runserver
-```
-
-很高兴我的项目代码或许对你有帮助，请我吃包辣条或喝瓶可乐吧!
-
-微信打赏:
-
-![mark](http://myphoto.mtianyan.cn/blog/180302/i52eHgilfD.png?imageslim)
-
-
-
-

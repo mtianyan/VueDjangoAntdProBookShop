@@ -110,18 +110,33 @@ WSGI_APPLICATION = 'VueDjangoFrameWorkShop.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'book_shop',
-        'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST': '127.0.0.1',
-        "OPTIONS": {"init_command": "SET default_storage_engine=INNODB;"}
+try:
+    var = os.environ["not_use_docker"]
+    UseDocker = False
+except KeyError:
+    UseDocker = True
+if UseDocker:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'book_shop',
+            'USER': 'root',
+            'PASSWORD': '123456',
+            'HOST': 'mysql',
+            "OPTIONS": {"init_command": "SET default_storage_engine=INNODB;"}
+        }
     }
-}
-
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'book_shop',
+            'USER': 'root',
+            'PASSWORD': '123456',
+            'HOST': '127.0.0.1',
+            "OPTIONS": {"init_command": "SET default_storage_engine=INNODB;"}
+        }
+    }
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
