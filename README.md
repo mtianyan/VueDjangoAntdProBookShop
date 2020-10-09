@@ -1,4 +1,4 @@
-# Vue前台 +  Django3.1 + DjangoRestful Framework + Ant Design Pro V4 开发的在线教育网站及后台管理
+# Vue前台 +  Django3.1 + DjangoRestful Framework + Ant Design Pro V4 开发的二手书商城网站及后台管理
 
 [![Build Status](https://travis-ci.org/mtianyan/hexoBlog-Github.svg?branch=master)](https://travis-ci.org/mtianyan/hexoBlog-Github)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
