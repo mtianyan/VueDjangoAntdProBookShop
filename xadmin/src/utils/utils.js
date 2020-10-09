@@ -6,6 +6,7 @@ import {Switch, Upload} from 'antd';
 import {richEditUpload} from '@/services/editor';
 import {ContentUtils} from 'braft-utils';
 import BraftEditor from 'braft-editor';
+import DynamicIcon from '@/components/DynamicIcon';
 
 /* eslint no-useless-escape:0 import/prefer-default-export:0 */
 const reg = /(((^https?:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(?::\d+)?|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)$/;
@@ -102,11 +103,14 @@ export const buildFileFormData = (params, fileFieldList) => {
     if (typeof params[fileField] === 'string') {
       fileData.append(fileField, params[fileField]);
     } else {
+      console.log(params[fileField].fileList[0].originFileObj)
       if (params[fileField].file.originFileObj !== undefined) {
         fileData.append(fileField, params[fileField].file.originFileObj);
       } else {
         // 处理avatar和file兼容
         fileData.append(fileField, params[fileField].fileList[0].originFileObj);
+        console.log("fileData");
+        console.log(fileData);
       }
     }
   }
@@ -452,3 +456,85 @@ export const richTrans = (value) => {
 export const BooleanDisplay = (text) => {
   return <Switch disabled checked={text} />;
 };
+
+export const recursionGet = (setValues, valueId) => {
+  let value = null;
+  for (let index = 0; index < setValues.length; index += 1) {
+    if (setValues[index].id === valueId) {
+      value = setValues[index];
+      break;
+    }
+    if (setValues[index].children instanceof Array && setValues[index].children.length > 0) {
+      const text = recursionGet(setValues[index].children, valueId);
+      if (text)
+        return text;
+    }
+  }
+  return value;
+};
+
+export const recursionChangeByKey = (setValues, key, row) => {
+  let value = null;
+  for (let index = 0; index < setValues.length; index += 1) {
+    if (setValues[index].key === key) {
+      console.log("yyx", row)
+      console.log("yy",{ ...setValues[index], ...row })
+      setValues[index] = { ...setValues[index], ...row };
+      break;
+    }
+    if (setValues[index].children instanceof Array && setValues[index].children.length > 0) {
+      const text = recursionChangeByKey(setValues[index].children, key, row);
+      if (text)
+        return text;
+    }
+  }
+  return value;
+};
+
+export const recursionGetChildren = (setValues, valueList) =>{
+  if (setValues instanceof Array) {
+    for (let index = 0; index < setValues.length; index += 1) {
+      if (setValues[index].children instanceof Array && setValues[index].children.length > 0) {
+        valueList.push(setValues[index].id);
+        recursionGetChildren(setValues[index].children, valueList);
+      } else {
+        valueList.push(setValues[index].id);
+      }
+    }
+  } else if (setValues.children instanceof Array && setValues.children.length > 0) {
+    valueList.push(setValues.id);
+    recursionGetChildren(setValues.children, valueList);
+  } else {
+    valueList.push(setValues.id);
+  }
+};
+
+export const recursionChange = (setValues) =>{
+  // callback("123")
+  if (setValues instanceof Array) {
+    for (let index = 0; index < setValues.length; index += 1) {
+      if (setValues[index].children instanceof Array && setValues[index].children.length > 0) {
+        // callback(setValues[index])
+        console.log("xx", setValues[index])
+        setValues[index].icon = <DynamicIcon type={setValues[index].icon}/>
+        recursionChange(setValues[index].children);
+      } else {
+        setValues[index].icon = <DynamicIcon type={setValues[index].icon}/>
+        // callback(setValues[index])
+      }
+    }
+  } else if (setValues.children instanceof Array && setValues.children.length > 0) {
+    // callback(setValues)
+    setValues.icon = <DynamicIcon type={setValues[index].icon}/>
+    recursionChange(setValues.children);
+  } else {
+    setValues.icon = <DynamicIcon type={setValues[index].icon}/>
+    // callback(setValues)
+  }
+};
+
+export const getRandomInt = (min, max)=> {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}

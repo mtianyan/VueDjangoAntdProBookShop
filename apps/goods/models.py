@@ -3,8 +3,8 @@ from django.db import models
 
 
 # Create your models here.
-from DjangoUeditor.models import UEditorField
-from xadmin_api.settings import MAIN_DISPLAY, MAIN_PIC
+from xadmin_api_cli.contants import MAIN_DISPLAY, MAIN_PIC
+from xadmin_api_cli.fileds import richTextField
 
 
 class GoodsCategory(models.Model):
@@ -69,8 +69,7 @@ class Goods(models.Model):
     market_price = models.FloatField(default=0, verbose_name="市场价格")
     shop_price = models.FloatField(default=0, verbose_name="本店价格")
     goods_brief = models.TextField(max_length=500, verbose_name="商品简短描述")
-    goods_desc = UEditorField(verbose_name=u"内容", imagePath="goods/images/", width=1000, height=300,
-                              filePath="goods/files/", default='')
+    goods_desc = richTextField(verbose_name="内容", default='')
     ship_free = models.BooleanField(default=True, verbose_name="是否承担运费")
     # 首页中展示的商品封面图
     goods_front_image = models.ImageField(upload_to="goods/images/", null=True, blank=True, verbose_name="封面图", help_text=MAIN_PIC)

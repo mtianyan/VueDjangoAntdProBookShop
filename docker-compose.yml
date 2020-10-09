@@ -35,4 +35,4 @@ mtianyan_book_store:
     - ./conf/uwsgi.ini:/etc/uwsgi.ini
   links:
     - mtianyan_mysql:mysql
-  command: uwsgi -s :8000 -w VueDjangoFrameWorkShop.wsgi -p 3
+  command: uwsgi -i /etc/uwsgi.ini

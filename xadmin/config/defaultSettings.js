@@ -10,7 +10,7 @@ const proSettings = {
   menu: {
     locale: true,
   },
-  title: 'Online Store',
+  title: '二手书管理',
   pwa: false,
   iconfontUrl: '',
 };

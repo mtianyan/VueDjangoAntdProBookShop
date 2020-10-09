@@ -3,7 +3,7 @@ from django.db import models
 from goods.models import Goods
 from django.contrib.auth import get_user_model
 # Create your models here.
-from xadmin_api.settings import MAIN_DISPLAY
+from xadmin_api_cli.contants import MAIN_DISPLAY
 
 User = get_user_model()
 

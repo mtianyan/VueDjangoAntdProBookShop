@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createBrowserHistory } from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/node_modules/@umijs/runtime';
+import { createBrowserHistory } from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/node_modules/@umijs/runtime';
 
 let options = {
   "basename": "/"

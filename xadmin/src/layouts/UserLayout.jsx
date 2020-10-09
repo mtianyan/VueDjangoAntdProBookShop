@@ -42,7 +42,7 @@ const UserLayout = props => {
           <div className={styles.top}>
             <div className={styles.header}>
                 <img alt="logo" className={styles.logo} src={logo} />
-                <span className={styles.title}>TyAdmin-二手书城管理后台</span>
+                <span className={styles.title}>TyAdmin-在线教育管理后台V2</span>
             </div>
             <div className={styles.desc}>Generate By TyAdmin Cli</div>
           </div>

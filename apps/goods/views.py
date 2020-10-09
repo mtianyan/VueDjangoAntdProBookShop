@@ -18,7 +18,6 @@ from rest_framework import generics
 from rest_framework import viewsets
 from rest_framework import filters
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework_extensions.cache.mixins import CacheResponseMixin
 # 设置登录与未登录限速
 from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 
@@ -37,7 +36,7 @@ class GoodsPagination(PageNumberPagination):
 # class GoodsListView(mixins.ListModelMixin, generics.GenericAPIView):
 # class GoodsListView(ListAPIView):
 # class GoodsListView(mixins.ListModelMixin, viewsets.GenericViewSet):
-class GoodsListViewSet(CacheResponseMixin, mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+class GoodsListViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     """
     商品列表页，分页，搜索，过滤，排序,取某一个具体商品的详情
     """

@@ -1,6 +1,10 @@
+import django
+from django.shortcuts import render
+from django.views import View
+
 from xadmin_api.custom import XadminViewSet
 from xadmin_api.filters import TyAdminSysLogFilter, TyAdminEmailVerifyRecordFilter
-from xadmin_api.models import TyAdminSysLog, TyAdminEmailVerifyRecord, TyAdminEmailVerifyRecord
+from xadmin_api.models import TyAdminSysLog, TyAdminEmailVerifyRecord
 from xadmin_api.serializers import TyAdminSysLogSerializer, TyAdminEmailVerifyRecordSerializer
 
 
@@ -64,6 +68,34 @@ class DashBoardView(views.APIView):
         return JsonResponse(json.loads(content))
 
 
+class MenuView(views.APIView):
+    def get(self, request, *args, **kwargs):
+        data_json = os.path.join(settings.BASE_DIR, 'xadmin_api/menu.json')
+        with open(data_json) as fr:
+            content = fr.read()
+        import demjson
+        content = demjson.decode(content)
+        print(json.dumps(content, ensure_ascii=False))
+        return JsonResponse({
+            "data": content
+        })
+
+
+class DashBoardView(views.APIView):
+    def get(self, request, *args, **kwargs):
+        sys_label = ['admin', 'auth', 'contenttypes', 'sessions', 'captcha', 'xadmin', 'xadmin_api', 'authtoken', 'social_django']
+        count_dict = {}
+        for one in django.apps.apps.get_models():
+            app_label = one._meta.app_label
+            if app_label not in sys_label:
+                model_ver_name = one._meta.verbose_name
+                one_num = one.objects.all().count()
+                count_dict[model_ver_name] = one_num
+        return JsonResponse({
+            "data": count_dict
+        })
+
+
 class LoginView(MtyCustomExecView):
     permission_classes = ()
 
@@ -89,29 +121,6 @@ class LoginView(MtyCustomExecView):
                 })
             else:
                 raise ValidationError({"password": ["密码错误"]})
-        else:
-            # 邮箱登录
-            captcha = request.data["captcha"]
-            email = request.data["email"]
-            try:
-                user = SysUser.objects.get(email=email)
-            except SysUser.DoesNotExist:
-                raise ValidationError({"email": ["邮箱不存在"]})
-            try:
-                email_code = TyAdminEmailVerifyRecord.objects.get(code=captcha, email=email)
-                if email_code.send_time + datetime.timedelta(minutes=6) < datetime.datetime.now():
-                    email_code.delete()
-                    raise ValidationError({"captcha": ["邮箱验证码已过期"]})
-                else:
-                    email_code.delete()
-                    login(request, user)
-                    return JsonResponse({
-                        "status": 'ok',
-                        "type": "account",
-                        "currentAuthority": ""
-                    })
-            except TyAdminEmailVerifyRecord.DoesNotExist:
-                raise ValidationError({"captcha": ["邮箱验证码错误"]})
 
 
 class UserSendCaptchaView(MtyCustomExecView):
@@ -164,3 +173,11 @@ class UploadView(MtyCustomExecView):
         rich_ser.validated_data["ty_admin_prefix"] = request._request.scheme + "://" + self.request.META['HTTP_HOST'] + settings.MEDIA_URL
         res = rich_ser.create(validated_data=rich_ser.validated_data)
         return Response(res)
+
+
+class AdminIndexView(View):
+    # 直接调用get方法免去判断
+    def get(self, request):
+        # render就是渲染html返回用户
+        # render三变量: request 模板名称 一个字典写明传给前端的值
+        return render(request, "TyAdmin/index.html")

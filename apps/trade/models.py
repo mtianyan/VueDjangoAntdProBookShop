@@ -6,7 +6,7 @@ from goods.models import Goods
 # 但是当第三方模块根本不知道你的user model在哪里如何导入呢
 from django.contrib.auth import get_user_model
 # 这个方法会去setting中找AUTH_USER_MODEL
-from xadmin_api.settings import MAIN_DISPLAY
+from xadmin_api_cli.contants import MAIN_DISPLAY
 
 User = get_user_model()
 

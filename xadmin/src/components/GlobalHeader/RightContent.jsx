@@ -5,6 +5,7 @@ import { connect, SelectLang } from 'umi';
 import Avatar from './AvatarDropdown';
 import HeaderSearch from '../HeaderSearch';
 import styles from './index.less';
+// import NoticeIconView from '@/components/GlobalHeader/NoticeIconView';
 
 const ENVTagColor = {
   dev: 'orange',
@@ -60,6 +61,7 @@ const GlobalHeaderRight = props => {
           <QuestionCircleOutlined />
         </a>
       </Tooltip>
+      {/*<NoticeIconView />*/}
       <Avatar />
       {REACT_APP_ENV && (
         <span>

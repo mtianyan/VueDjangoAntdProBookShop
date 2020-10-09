@@ -1,13 +1,13 @@
 // @ts-nocheck
 import React from 'react';
-import initialState from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/.umi/plugin-initial-state/models/initialState';
+import initialState from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/.umi/plugin-initial-state/models/initialState';
 
 // @ts-ignore
-import Dispatcher from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/node_modules/@umijs/plugin-model/lib/helpers/dispatcher';
+import Dispatcher from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/node_modules/@umijs/plugin-model/lib/helpers/dispatcher';
 // @ts-ignore
-import Executor from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/node_modules/@umijs/plugin-model/lib/helpers/executor';
+import Executor from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/node_modules/@umijs/plugin-model/lib/helpers/executor';
 // @ts-ignore
-import { UmiContext } from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/node_modules/@umijs/plugin-model/lib/helpers/constant';
+import { UmiContext } from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/node_modules/@umijs/plugin-model/lib/helpers/constant';
 
 export const models = { '@@initialState': initialState,  };
 

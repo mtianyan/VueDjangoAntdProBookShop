@@ -3,15 +3,15 @@ import {
   createIntl,
   IntlShape,
   MessageDescriptor,
-} from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/node_modules/react-intl';
+} from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/node_modules/react-intl';
 import { ApplyPluginsType } from 'umi';
 import { event, LANG_CHANGE_EVENT } from './locale';
 // @ts-ignore
-import warning from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/node_modules/warning/warning.js';
+import warning from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/node_modules/warning/warning.js';
 
 import { plugin } from '../core/umiExports';
 
-export * from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/node_modules/react-intl';
+export * from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/node_modules/react-intl';
 
 let g_intl: IntlShape;
 
@@ -20,7 +20,7 @@ const useLocalStorage = true;
 export const localeInfo: {[key: string]: any} = {
   'en-US': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/locales/en-US.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/pages/DashBoard/locales/en-US.js')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/locales/en-US.js')),
     },
     locale: 'en-US',
     antd: {
@@ -30,7 +30,7 @@ export const localeInfo: {[key: string]: any} = {
   },
   'pt-BR': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/locales/pt-BR.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/pages/DashBoard/locales/pt-BR.js')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/locales/pt-BR.js')),
     },
     locale: 'pt-BR',
     antd: {
@@ -40,7 +40,7 @@ export const localeInfo: {[key: string]: any} = {
   },
   'zh-CN': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/locales/zh-CN.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/pages/DashBoard/locales/zh-CN.js')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/locales/zh-CN.js')),
     },
     locale: 'zh-CN',
     antd: {
@@ -50,7 +50,7 @@ export const localeInfo: {[key: string]: any} = {
   },
   'zh-TW': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/locales/zh-TW.js')),...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/pages/DashBoard/locales/zh-TW.js')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/locales/zh-TW.js')),
     },
     locale: 'zh-TW',
     antd: {

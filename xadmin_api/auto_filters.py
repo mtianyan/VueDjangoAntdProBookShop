@@ -1,4 +1,3 @@
-
 from django_filters import rest_framework as filters
 from xadmin_api.custom import DateFromToRangeFilter
 from users.models import UserProfile, VerifyCode
@@ -7,7 +6,6 @@ from trade.models import ShoppingCart, OrderInfo, OrderGoods
 from user_operation.models import UserFav, UserAddress, UserLeavingMessage
 from replace.models import VersionControl
 
-    
 
 class UserProfileFilter(filters.FilterSet):
     last_login = DateFromToRangeFilter(field_name="last_login")
@@ -41,7 +39,7 @@ class GoodsCategoryBrandFilter(filters.FilterSet):
 
     class Meta:
         model = GoodsCategoryBrand
-        exclude = ["image","image"]
+        exclude = ["image", "image"]
 
 
 class GoodsFilter(filters.FilterSet):
@@ -50,7 +48,7 @@ class GoodsFilter(filters.FilterSet):
 
     class Meta:
         model = Goods
-        exclude = ["goods_front_image","goods_front_image"]
+        exclude = ["goods_front_image", "goods_front_image"]
 
 
 class GoodsImageFilter(filters.FilterSet):
@@ -59,7 +57,7 @@ class GoodsImageFilter(filters.FilterSet):
 
     class Meta:
         model = GoodsImage
-        exclude = ["image","image"]
+        exclude = ["image", "image"]
 
 
 class BannerFilter(filters.FilterSet):
@@ -68,7 +66,7 @@ class BannerFilter(filters.FilterSet):
 
     class Meta:
         model = Banner
-        exclude = ["image","image"]
+        exclude = ["image", "image"]
 
 
 class IndexAdFilter(filters.FilterSet):

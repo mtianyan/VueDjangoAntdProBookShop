@@ -21,7 +21,7 @@ class UserFavViewset(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.Crea
     create:
         收藏商品
     """
-    # queryset = UserFav.objects.all()
+    queryset = UserFav.objects.all()
     permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
     serializer_class = UserFavSerializer
     lookup_field = 'goods_id'

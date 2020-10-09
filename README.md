@@ -1,45 +1,101 @@
-# VueDjangoFrameWorkShop(Django3.0 +  Django-rest-framework +Xadmin 后台管理+ Ueditor 富文本编辑器)
+# Vue前台 +  Django3.1 + DjangoRestful Framework + Ant Design Pro V4 开发的在线教育网站及后台管理
 
 [![Build Status](https://travis-ci.org/mtianyan/hexoBlog-Github.svg?branch=master)](https://travis-ci.org/mtianyan/hexoBlog-Github)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-使用Python3.7与Django3.0(Django-rest-framework)以及前端vue开发的前后端分离的商城网站
+使用TyAdmin(现代化的Xadmin替代品)生成管理后台前后端，并自动对接。
 
-项目支持支付宝支付(暂不支持微信支付),支持手机短信验证码注册， 支持第三方登录。集成了sentry错误监控系统。
+## 项目演示
 
-> 已测试xadmin,  DjangoUeditor 图片上传 Django3.0下功能可用。 如有3.0使用时触发Bug,可请进群联系。欢迎加入 funpython.cn QQ群:211599322
+![](http://cdn.pic.mtianyan.cn/blog_img/20201009224848.png)
 
-## Quick Start
+![](http://cdn.pic.mtianyan.cn/blog_img/20201009230342.png)
+
+
+## 运行指南:
+
+### docker运行
 
 ```
-$ git clone https://github.com/mtianyan/VueDjangoFrameWorkShop.git
-$ cd VueDjangoFrameWorkShop
-$ pip install -r requirements.txt
+git clone https://github.com/mtianyan/VueDjangoAntdProBookShop.git
+cd VueDjangoAntdProBookShop
+docker-compose up
 
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser
+# 导入数据
+docker exec -it onlinemooc_mtianyan_mysql_1 bash
+mysql -u root -p -D mxonline3 < sql/mxonline3.sql
+# 输入密码: mtianyanroot 
+```
+
+### 本地环境运行
+
+后端项目运行:
+
+```
+git clone https://github.com/mtianyan/OnlineMooc.git
+cd OnlineMooc
+pipenv shell
+pip install -r requirements.txt
+
+# Navicat创建数据库，导入mxonline3.sql
+# 修改settings.py 中数据库密码
+
 python manage.py runserver
 ```
 
-use the address: http://127.0.0.1:8000/
-
-## Contents：
-
-[原版视频课程地址:](https://coding.imooc.com/learn/list/131.html)
-
-## About me
-
-欢迎star项目！谢谢！ 你的关注支持是我继续分享前进的动力。
-
-## 求打赏鼓励
-
-很高兴我写的文章（或我的项目代码）对你有帮助，请我吃包辣条吧！
+很高兴我的项目代码或许对你有帮助，请我吃包辣条或喝瓶可乐吧!
 
 微信打赏:
 
 ![mark](http://myphoto.mtianyan.cn/blog/180302/i52eHgilfD.png?imageslim)
 
-支付宝打赏:
 
-![mark](http://myphoto.mtianyan.cn/blog/180302/gDlBGemI60.jpg?imageslim)
+
+
+
+
+>账号: mtianyan
+密码: admin2020
+
+- 首页地址: https://mooc.funpython.cn/
+
+## 运行指南:
+
+### docker运行
+
+```
+git clone https://github.com/mtianyan/OnlineMooc.git
+cd OnlineMooc
+docker-compose up
+
+# 导入数据
+docker exec -it onlinemooc_mtianyan_mysql_1 bash
+mysql -u root -p -D mxonline3 < sql/mxonline3.sql
+# 输入密码: mtianyanroot 
+```
+
+### 本地环境运行
+
+后端项目运行:
+
+```
+git clone https://github.com/mtianyan/OnlineMooc.git
+cd OnlineMooc
+pipenv shell
+pip install -r requirements.txt
+
+# Navicat创建数据库，导入mxonline3.sql
+# 修改settings.py 中数据库密码
+
+python manage.py runserver
+```
+
+很高兴我的项目代码或许对你有帮助，请我吃包辣条或喝瓶可乐吧!
+
+微信打赏:
+
+![mark](http://myphoto.mtianyan.cn/blog/180302/i52eHgilfD.png?imageslim)
+
+
+
+

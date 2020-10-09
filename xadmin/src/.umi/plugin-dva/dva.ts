@@ -3,7 +3,7 @@ import { Component } from 'react';
 import { ApplyPluginsType } from 'umi';
 import dva from 'dva';
 // @ts-ignore
-import createLoading from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/node_modules/dva-loading/dist/index.esm.js';
+import createLoading from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/node_modules/dva-loading/dist/index.esm.js';
 import { plugin, history } from '../core/umiExports';
 
 let app:any = null;
@@ -28,11 +28,10 @@ export function _onCreate(options = {}) {
   (runtimeDva.plugins || []).forEach((plugin:any) => {
     app.use(plugin);
   });
-  app.model({ namespace: 'global', ...(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/models/global.js').default) });
-app.model({ namespace: 'login', ...(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/models/login.js').default) });
-app.model({ namespace: 'setting', ...(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/models/setting.js').default) });
-app.model({ namespace: 'user', ...(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/models/user.js').default) });
-app.model({ namespace: 'model', ...(require('/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/pages/DashBoard/model.jsx').default) });
+  app.model({ namespace: 'global', ...(require('/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/models/global.js').default) });
+app.model({ namespace: 'login', ...(require('/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/models/login.js').default) });
+app.model({ namespace: 'setting', ...(require('/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/models/setting.js').default) });
+app.model({ namespace: 'user', ...(require('/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/models/user.js').default) });
   return app;
 }
 

@@ -6,11 +6,10 @@ import { EffectsCommandMap, SubscriptionAPI } from 'dva';
 import { match } from 'react-router-dom';
 import { Location, LocationState, History } from 'history';
 
-export * from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/models/global';
-export * from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/models/login';
-export * from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/models/setting';
-export * from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/models/user';
-export * from '/Users/mtianyan/Desktop/Github/VueDjangoAntdProBookShop/xadmin/src/pages/DashBoard/model';
+export * from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/models/global';
+export * from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/models/login';
+export * from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/models/setting';
+export * from '/Users/mtianyan/tyRepos/Python/VueDjangoAntdProBookShop/xadmin/src/models/user';
 
 export interface Action<T = any> {
   type: T

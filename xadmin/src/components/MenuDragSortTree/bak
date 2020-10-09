@@ -1,0 +1,61 @@
+const gData = [{
+  'title': '首页',
+  'icon': 'Appstore',
+  'key': '/xadmin/index',
+  'component': './DashBoard',
+}, {'title': '所在城市', 'icon': 'UpCircle', 'key': '/xadmin/city_dict', 'component': './CityDictList'}, {
+  'title': '课程机构',
+  'icon': 'smile',
+  'key': '/xadmin/course_org',
+  'component': './CourseOrgList',
+}, {'title': '机构讲师', 'icon': 'smile', 'key': '/xadmin/teacher', 'component': './TeacherList'}, {
+  'title': '课程信息',
+  'icon': 'smile',
+  'key': '/xadmin/course',
+  'component': './CourseList',
+}, {'title': '章节信息', 'icon': 'smile', 'key': '/xadmin/lesson', 'component': './LessonList'}, {
+  'title': '视频信息',
+  'icon': 'smile',
+  'key': '/xadmin/video',
+  'component': './VideoList',
+}, {
+  'title': '课程资源',
+  'icon': 'smile',
+  'key': '/xadmin/course_resource',
+  'component': './CourseResourceList',
+}, {
+  'title': '课程评论',
+  'icon': 'smile',
+  'key': '/xadmin/course_comments',
+  'component': './CourseCommentsList',
+}, {'title': '用户信息', 'icon': 'smile', 'key': '/xadmin/user_profile', 'component': './UserProfileList'}, {
+  'title': '邮箱验证',
+  'icon': 'smile',
+  'key': '/xadmin/email_verify_record',
+  'component': './EmailVerifyRecordList',
+}, {'title': '首页轮播', 'icon': 'smile', 'key': '/xadmin/banner', 'component': './BannerList'}, {
+  'title': '用户咨询',
+  'icon': 'smile',
+  'key': '/xadmin/user_ask',
+  'component': './UserAskList',
+}, {
+  'title': '用户收藏',
+  'icon': 'smile',
+  'key': '/xadmin/user_favorite',
+  'component': './UserFavoriteList',
+}, {'title': '用户消息', 'icon': 'smile', 'key': '/xadmin/user_message', 'component': './UserMessageList'}, {
+  'title': '用户课程',
+  'icon': 'smile',
+  'key': '/xadmin/user_course',
+  'component': './UserCourseList',
+}, {
+  'title': 'TyAdmin日志',
+  'icon': 'smile',
+  'key': '/xadmin/ty_admin_sys_log',
+  'component': './TyAdminSysLogList',
+}, {
+  'title': 'TyAdmin验证',
+  'icon': 'smile',
+  'key': '/xadmin/ty_admin_email_verify_record',
+  'component': './TyAdminEmailVerifyRecordList',
+}];

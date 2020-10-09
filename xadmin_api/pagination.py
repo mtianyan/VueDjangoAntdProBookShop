@@ -4,6 +4,8 @@ from collections import OrderedDict
 
 
 class CustomPageNumberPagination(PageNumberPagination):
+    def __init__(self, pagesize=10):
+        self.page_size = pagesize
     page_query_param = 'current'
     page_size_query_param = 'pageSize'
 

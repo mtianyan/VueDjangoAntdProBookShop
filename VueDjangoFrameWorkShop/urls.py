@@ -39,58 +39,52 @@ from rest_framework_jwt.views import obtain_jwt_token
 # })
 router = DefaultRouter()
 
-# 配置goods的url,这个basename是干啥的
-router.register(r'goods', GoodsListViewSet, base_name="goods")
+router.register(r'goods', GoodsListViewSet, basename="goods")
 
 # 配置Category的url
-router.register(r'categories', CategoryViewset, base_name="categories")
+router.register(r'categories', CategoryViewset, basename="categories")
 
 # 配置codes的url
-router.register(r'code', SmsCodeViewset, base_name="code")
+router.register(r'code', SmsCodeViewset, basename="code")
 
 # 配置users的url
-router.register(r'users', UserViewset, base_name="users")
+router.register(r'users', UserViewset, basename="users")
 
 # 配置用户收藏的url
-router.register(r'userfavs', UserFavViewset, base_name="userfavs")
+router.register(r'userfavs', UserFavViewset, basename="userfavs")
 
 # 配置用户留言的url
-router.register(r'messages', LeavingMessageViewset, base_name="messages")
+router.register(r'messages', LeavingMessageViewset, basename="messages")
 
 # 收货地址
-router.register(r'address', AddressViewset, base_name="address")
+router.register(r'address', AddressViewset, basename="address")
 
 # 购物车
-router.register(r'shopcarts', ShoppingCartViewset, base_name="shopcarts")
+router.register(r'shopcarts', ShoppingCartViewset, basename="shopcarts")
 
 # 订单相关url
-router.register(r'orders', OrderViewset, base_name="orders")
+router.register(r'orders', OrderViewset, basename="orders")
 
 # 首页banner轮播图url
-router.register(r'banners', BannerViewset, base_name="banners")
+router.register(r'banners', BannerViewset, basename="banners")
 
 # 首页系列商品展示url
-router.register(r'indexgoods', IndexCategoryViewset, base_name="indexgoods")
+router.register(r'indexgoods', IndexCategoryViewset, basename="indexgoods")
 
 # 热搜词
-router.register(r'hotsearchs', HotSearchsViewset, base_name="hotsearchs")
+router.register(r'hotsearchs', HotSearchsViewset, basename="hotsearchs")
 
 # from VueDjangoFrameWorkShop.settings import STATIC_ROOT
 from django.views.generic.base import RedirectView
 from users.views import favicon_view
 
 urlpatterns = [
-    path('xadmin_api/goods', include('goods.xadmin_api_urls')),
-    path('xadmin_api/trade', include('trade.xadmin_api_urls')),
-    path('xadmin_api/user_operation', include('user_operation.xadmin_api_urls')),
-    path('xadmin_api/users', include('users.xadmin_api_urls')),
-
-    # path('admin/', admin.site.urls),
-    path('admin/', xadmin.site.urls),
+    # path('xadmin_api/goods', include('goods.xadmin_api_urls')),
+    # path('xadmin_api/trade', include('trade.xadmin_api_urls')),
+    # path('xadmin_api/user_operation', include('user_operation.xadmin_api_urls')),
+    # path('xadmin_api/users', include('users.xadmin_api_urls')),
     # 处理图片显示的url,使用Django自带serve,传入参数告诉它去哪个路径找，我们有配置好的路径MEDIAROOT
     # re_path('media/(?P<path>.*)', serve, {"document_root": MEDIA_ROOT}),
-    # 富文本相关url
-    path('ueditor/', include('DjangoUeditor.urls')),
 
     # 商品列表页
     # path('goods/', GoodsListView.as_view(),name="goods-list"),

@@ -57,9 +57,7 @@ INSTALLED_APPS = [
     'goods.apps.GoodsConfig',
     'trade.apps.TradeConfig',
     'user_operation.apps.UserOperationConfig',
-    'xadmin',
     'crispy_forms',
-    'DjangoUeditor',
     'rest_framework',
     'django_filters',
     'corsheaders',
@@ -201,9 +199,9 @@ REGEX_MOBILE = "^1[358]\d{9}$|^147\d{8}$|^176\d{8}$"
 APIKEY = ''
 
 # 缓存过期时间
-REST_FRAMEWORK_EXTENSIONS = {
-    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60 * 15
-}
+# REST_FRAMEWORK_EXTENSIONS = {
+#     'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60 * 15
+# }
 
 """redis 缓存"""
 # CACHES = {
