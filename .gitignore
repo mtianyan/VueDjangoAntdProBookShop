@@ -48,6 +48,7 @@ Temporary Items
 /VueDjangoFrameWorkShop/dev_settings.py
 /trade/keys
 /.idea/
-/xadmin/node_modules/
+/node_modules/
 /front_end/book-store/node_modules
 /db/
+/tyadmin/node_modules/
