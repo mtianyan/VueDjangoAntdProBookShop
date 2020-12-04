@@ -1,4 +1,4 @@
-from django.views.generic.base import RedirectView
+from django.views.generic.base import RedirectView, View
 from rest_framework.mixins import CreateModelMixin
 from random import choice
 
@@ -20,6 +20,8 @@ from users.serializers import SmsSerializer, UserRegSerializer, UserDetailSerial
 from utils.yunpian import YunPian
 
 User = get_user_model()
+
+
 # 发送验证码是创建model中一条记录的操作
 # Create your views here.
 
@@ -93,6 +95,7 @@ class UserViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveMode
     authentication_classes = ()
     serializer_class = UserRegSerializer
     queryset = User.objects.all()
+
     # authentication_classes = (JSONWebTokenAuthentication, authentication.SessionAuthentication)
 
     def get_serializer_class(self):
@@ -133,6 +136,14 @@ class UserViewset(CreateModelMixin, mixins.UpdateModelMixin, mixins.RetrieveMode
 
     def perform_create(self, serializer):
         return serializer.save()
+
+
+class IndexView(View):
+    # 直接调用get方法免去判断
+    def get(self, request):
+        # render就是渲染html返回用户
+        # render三变量: request 模板名称 一个字典写明传给前端的值
+        return render(request, "index.html")
 
 
 favicon_view = RedirectView.as_view(

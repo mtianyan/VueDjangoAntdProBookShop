@@ -15,11 +15,7 @@ Including another URLconf
 """
 
 from django.views.static import serve
-
-from replace.views import IndexView
 from rest_framework.documentation import include_docs_urls
-
-import xadmin
 from django.contrib import admin
 from django.urls import path, re_path, include
 from django.views.generic import TemplateView
@@ -27,7 +23,7 @@ from django.views.generic import TemplateView
 from goods.views import GoodsListViewSet, CategoryViewset, BannerViewset, IndexCategoryViewset, HotSearchsViewset
 from trade.views import ShoppingCartViewset, OrderViewset, AlipayView
 from user_operation.views import UserFavViewset, LeavingMessageViewset, AddressViewset
-from users.views import SmsCodeViewset, UserViewset
+from users.views import SmsCodeViewset, UserViewset, IndexView
 # from goods.views import GoodsListView,
 # from goods.views_base import GoodsListView
 from rest_framework.routers import DefaultRouter
@@ -77,6 +73,7 @@ router.register(r'hotsearchs', HotSearchsViewset, basename="hotsearchs")
 # from VueDjangoFrameWorkShop.settings import STATIC_ROOT
 from django.views.generic.base import RedirectView
 from users.views import favicon_view
+from tyadmin_api.views import AdminIndexView
 
 urlpatterns = [
     # path('xadmin_api/goods', include('goods.xadmin_api_urls')),
@@ -106,7 +103,7 @@ urlpatterns = [
     # 支付宝支付相关接口
     path('alipay/return/', AlipayView.as_view()),
 
-    # 首页
+    # # 首页
     path('index/', IndexView.as_view(), name="index"),
 
     # re_path('static/(?P<path>.*)', serve, {"document_root": STATIC_ROOT}),
@@ -116,5 +113,6 @@ urlpatterns = [
 
     path('favicon.ico', favicon_view),
 
-    path('api/xadmin/v1/', include('xadmin_api.urls')),
+    path('api/xadmin/v1/', include('tyadmin_api.urls')),
+    re_path('^xadmin/.*', AdminIndexView.as_view()),
 ]

@@ -64,9 +64,9 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'social_django',
     'raven.contrib.django.raven_compat',
-    'replace.apps.ReplaceConfig',
-    'xadmin_api',
-    'captcha'
+    'tyadmin_api_cli',
+    'captcha',
+    'tyadmin_api'
 ]
 
 MIDDLEWARE = [
@@ -287,3 +287,7 @@ else:
         execfile(os.path.join(PROJECT_ROOT, 'dev_settings.py'))
     except IOError:
         pass
+
+TY_ADMIN_CONFIG = {
+    'GEN_APPS': ['goods', 'trade', 'user_operation', 'users']
+}

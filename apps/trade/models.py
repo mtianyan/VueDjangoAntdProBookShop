@@ -6,7 +6,6 @@ from goods.models import Goods
 # 但是当第三方模块根本不知道你的user model在哪里如何导入呢
 from django.contrib.auth import get_user_model
 # 这个方法会去setting中找AUTH_USER_MODEL
-from xadmin_api_cli.contants import MAIN_DISPLAY
 
 User = get_user_model()
 
@@ -16,8 +15,8 @@ class ShoppingCart(models.Model):
     """
     购物车
     """
-    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=u"用户", help_text=f"{MAIN_DISPLAY}__username")
-    goods = models.ForeignKey(Goods, on_delete=models.CASCADE, verbose_name=u"商品", help_text=f"{MAIN_DISPLAY}__name")
+    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=u"用户")
+    goods = models.ForeignKey(Goods, on_delete=models.CASCADE, verbose_name=u"商品")
     nums = models.IntegerField(default=0, verbose_name="购买数量")
 
     add_time = models.DateTimeField(default=datetime.now, verbose_name=u"添加时间")
@@ -47,7 +46,7 @@ class OrderInfo(models.Model):
         ("wechat", "微信"),
     )
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="用户", help_text=f"{MAIN_DISPLAY}__username")
+    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="用户")
     # unique订单号唯一
     order_sn = models.CharField(max_length=30, null=True, blank=True, unique=True, verbose_name="订单编号")
     # 微信支付可能会用到
@@ -82,9 +81,9 @@ class OrderGoods(models.Model):
     订单内的商品详情
     """
     # 一个订单对应多个商品，所以添加外键
-    order = models.ForeignKey(OrderInfo, on_delete=models.CASCADE, verbose_name="订单信息", related_name="goods", help_text=f"{MAIN_DISPLAY}__order_sn")
+    order = models.ForeignKey(OrderInfo, on_delete=models.CASCADE, verbose_name="订单信息", related_name="goods")
     # 两个外键形成一张关联表
-    goods = models.ForeignKey(Goods, on_delete=models.CASCADE, verbose_name="商品", help_text=f"{MAIN_DISPLAY}__name")
+    goods = models.ForeignKey(Goods, on_delete=models.CASCADE, verbose_name="商品")
     goods_num = models.IntegerField(default=0, verbose_name="商品数量")
 
     add_time = models.DateTimeField(default=datetime.now, verbose_name="添加时间")

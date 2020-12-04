@@ -3,14 +3,17 @@
 [![Build Status](https://travis-ci.org/mtianyan/hexoBlog-Github.svg?branch=master)](https://travis-ci.org/mtianyan/hexoBlog-Github)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-使用TyAdmin(现代化的Xadmin替代品)生成管理后台前后端，并自动对接。
+使用TyAdmin(现代化的Xadmin替代品)生成管理后台前后端，并自动对接。✨ 强烈推荐使用:
+
+>https://github.com/mtianyan/tyadmin_api_cli 
+
+📨 Tyadmin互动交流反馈QQ群: 304094780
 
 ## 项目演示
 
-![](http://cdn.pic.mtianyan.cn/blog_img/20201009224848.png)
+![](http://cdn.pic.mtianyan.cn/blog_img/20201204231519.png)
 
-![](http://cdn.pic.mtianyan.cn/blog_img/20201009230342.png)
-
+![](http://cdn.pic.mtianyan.cn/blog_img/20201204231446.png)
 
 ## 运行指南:
 
@@ -42,6 +45,10 @@ pip install -r requirements.txt
 
 python manage.py runserver
 ```
+
+访问首页: http://127.0.0.1:8000/index
+访问后台: http://127.0.0.1:8000/xadmin
+
 
 很高兴我的项目代码或许对你有帮助，请我吃包辣条或喝瓶可乐吧!
 
