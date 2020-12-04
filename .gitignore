@@ -51,4 +51,5 @@ Temporary Items
 /node_modules/
 /front_end/book-store/node_modules
 /db/
-/tyadmin/node_modules/
+**/node_modules
+**/__pycache__
