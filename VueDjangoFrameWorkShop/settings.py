@@ -270,7 +270,7 @@ STATIC_URL = '/static/'
 #     'dsn': 'https://<key>:<secret>@sentry.io/<project>',
 # }
 
-REMOTE_DEBUG = False
+REMOTE_DEBUG = True
 PROJECT_ROOT = os.path.join(BASE_DIR, 'VueDjangoFrameWorkShop')
 if DEBUG and REMOTE_DEBUG:
     try:

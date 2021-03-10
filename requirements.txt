@@ -72,7 +72,7 @@ sqlparse==0.3.1
 tablib==2.0.0
 tqdm==4.50.2
 twine==3.2.0
-tyadmin-api-cli=0.8.0
+tyadmin-api-cli==0.8.0
 unicodecsv==0.14.1
 uritemplate==3.0.1
 urllib3==1.25.10

@@ -9,13 +9,14 @@ mtianyan_mysql:
       - MYSQL_ROOT_PASSWORD=mtianyanroot #change to good root password
     volumes:
       - "./db:/var/lib/mysql"
+      - "./sql:/sql"
 
 
 mtianyan_nginx:
   restart: always
   image: nginx
   ports:
-    - "8811:80"
+    - "8000:80"
   volumes:
     - ./conf/nginx_book.conf:/etc/nginx/conf.d/nginx_book.conf
   volumes_from:
@@ -25,6 +26,8 @@ mtianyan_nginx:
 
 mtianyan_book_store:
   restart: always
+  environment:
+    - USE_DOCKER=1
   build: .
   volumes:
     - .:/VueDjangoFrameWorkShop

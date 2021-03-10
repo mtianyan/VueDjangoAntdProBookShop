@@ -26,7 +26,7 @@ docker-compose up
 
 # 导入数据
 docker exec -it vuedjangoantdprobookshop_mtianyan_mysql_1 bash
-mysql -u root -p -D book_shop < sql/book_shop.sql.sql
+mysql -u root -p -D vue_shop < sql/book_shop.sql
 # 输入密码: mtianyanroot 
 ```
 
