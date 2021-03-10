@@ -1,7 +1,7 @@
 asgiref==3.2.10
 asn1crypto==1.4.0
 backports.csv==1.0.7
-bleach==3.2.1
+bleach==3.3.0
 certifi==2020.6.20
 cffi==1.14.3
 chardet==3.0.4
