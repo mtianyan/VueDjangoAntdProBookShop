@@ -50,7 +50,7 @@ Pillow==7.2.0
 pkginfo==1.5.0.1
 pycparser==2.20
 pycryptodome==3.9.8
-Pygments==2.7.1
+Pygments==2.7.4
 PyJWT==1.7.1
 pyparsing==2.4.7
 python3-openid==3.2.0
