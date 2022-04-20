@@ -9,12 +9,6 @@
 
 📨 Tyadmin互动交流反馈QQ群: 304094780
 
-## 项目演示
-
-![](http://cdn.pic.mtianyan.cn/blog_img/20201204231519.png)
-
-![](http://cdn.pic.mtianyan.cn/blog_img/20201204231446.png)
-
 ## 运行指南:
 
 ### docker运行
