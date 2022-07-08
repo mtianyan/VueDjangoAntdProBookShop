@@ -58,7 +58,7 @@
     "immutability-helper": "^3.1.1",
     "js-export-excel": "^1.1.4",
     "lodash": "^4.17.11",
-    "moment": "^2.25.3",
+    "moment": "^2.29.4",
     "mtianyan-pro-table": "2.4.19",
     "numeral": "^2.0.6",
     "omit.js": "^2.0.2",

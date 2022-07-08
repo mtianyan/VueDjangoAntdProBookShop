@@ -4235,6 +4235,11 @@ babel-plugin-transform-react-remove-prop-types@0.4.24:
   resolved "https://registry.npm.taobao.org/babel-plugin-transform-react-remove-prop-types/download/babel-plugin-transform-react-remove-prop-types-0.4.24.tgz#f2edaf9b4c6a5fbe5c1d678bfb531078c1555f3a"
   integrity sha1-8u2vm0xqX75cHWeL+1MQeMFVXzo=
 
+babel-plugin-transform-remove-console@^6.9.4:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-remove-console/-/babel-plugin-transform-remove-console-6.9.4.tgz#b980360c067384e24b357a588d807d3c83527780"
+  integrity sha512-88blrUrMX3SPiGkT1GnvVY8E/7A+k6oj3MNvUtTIxJflFzXTw1bHkuJ/y039ouhFMp2prRn5cQGzokViYi1dsg==
+
 babel-preset-current-node-syntax@^0.1.2:
   version "0.1.3"
   resolved "https://registry.npm.taobao.org/babel-preset-current-node-syntax/download/babel-preset-current-node-syntax-0.1.3.tgz#b4b547acddbf963cba555ba9f9cbbb70bfd044da"
@@ -11450,10 +11455,10 @@ mockjs@^1.0.1-beta3:
   dependencies:
     commander "*"
 
-moment@2.x, moment@^2.24.0, moment@^2.25.3:
-  version "2.27.0"
-  resolved "https://registry.npm.taobao.org/moment/download/moment-2.27.0.tgz?cache=0&sync_timestamp=1592517925956&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmoment%2Fdownload%2Fmoment-2.27.0.tgz#8bff4e3e26a236220dfe3e36de756b6ebaa0105d"
-  integrity sha1-i/9OPiaiNiIN/j423nVrbrqgEF0=
+moment@2.x, moment@^2.24.0, moment@^2.25.3, moment@^2.29.4:
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 moo@^0.5.0:
   version "0.5.1"
