@@ -46,7 +46,7 @@ oauthlib==3.1.0
 odfpy==1.4.1
 openpyxl==3.0.5
 packaging==20.4
-Pillow==7.2.0
+Pillow==9.3.0
 pkginfo==1.5.0.1
 pycparser==2.20
 pycryptodome==3.9.8
