@@ -70,7 +70,7 @@
     "react-dom": "^16.8.6",
     "react-fittext": "^1.0.0",
     "react-helmet-async": "^1.0.4",
-    "umi": "^3.2.0",
+    "umi": "^3.5.36",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "umi-request": "^1.0.8",
     "use-merge-value": "^1.0.1"
